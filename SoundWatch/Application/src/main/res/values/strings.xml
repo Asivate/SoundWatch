@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="start_wearable_activity">Start Wearable Activity</string>
+    <string name="start">Start</string>
+    <string name="stop_foreground">Stop Foreground Service</string>
+    <string name="start_foreground">Start Foreground Service</string>
+    <string name="toggle_server_connection">Toggle Server Connection</string>
+    <string name="block_sounds">Block Sounds</string>
+    <string name="location_awareness">Location Awareness</string>
+    <string name="speech">Speech</string>
+    <string name="knocking">Knocking</string>
+    <string name="door_in_use">Door In-Use</string>
+    <string name="fire_smoke_alarm">Fire/Smoke Alarm</string>
+    <string name="phone_ring">Phone Ring</string>
+    <string name="water_running">Water Running</string>
+    <string name="microwave">Microwave</string>
+    <string name="dishwasher">Dishwasher</string>
+    <string name="laughing">Laughter</string>
+    <string name="car_honk">Car Honk</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="dog_bark">Dog Barking</string>
+    <string name="test">test</string>
+    <string name="soundwatch">SoundWatch</string>
+    <string name="drill">Drilling</string>
+    <string name="vacuum">Vacuum</string>
+    <string name="baby_cry">Baby Cry</string>
+    <string name="chopping">Chopping</string>
+    <string name="shaver">Shaver</string>
+    <string name="tooth_brush">Tooth Brush</string>
+    <string name="blender">Blender</string>
+    <string name="door_bell">Door Bell</string>
+    <string name="toilet_flush">Toilet Flush</string>
+    <string name="hair_dryer">Hair Dryer</string>
+    <string name="snoring">Snoring</string>
+    <string name="hammering">Hammering</string>
+    <string name="cat_meow">Cat Meowing</string>
+    <string name="alarm_clock">Alarm Clock</string>
+    <string name="utensils_and_cutlery">Utensils and Cutlery</string>
+    <string name="saw">Sawing</string>
+    <string name="category_1">Emergency</string>
+    <string name="category_2">Home</string>
+    <string name="category_3">Human/Animal</string>
+    <string name="category_4">Outdoor</string>
+    <string name="category_5">Tools</string>
+    <string name="instruction">Select the sounds you want to recognize</string>
+    <string name="about">About</string>
+    <string name="home">Home</string>
+    <string name="help">Help</string>
+    <string name="coughing">Coughing</string>
+    <string name="typing">Typing</string>
+    <string name="phone_tutorial">Phone App Tutorial</string>
+    <string name="watch_tutorial">Watch App Tutorial</string>
+    <string name="troubleshoot">Scroll down for Help and Troubleshooting</string>
+    <string name="logo">Logo</string>
+    <string name="welcome">Welcome To</string>
+    <string name="faq">Help &amp; Troubleshooting: </string>
+    <string name="question_1">My phone and watch have become unpaired. How do I fix this?</string>
+    <string name="answer_1">Frequently, phones and watches become unpaired due to a bug for Google WearOS. Simply reopen the WearOS app on your phone, wait until the app said "Connected via Bluetooth|Wifi" then return to your watch and re-click the listen microphone icon. A pop-up should come up that tells you that your device is reconnected.</string>
+
+    <string name="question_2">How do I set SoundWatch to listen for sounds?</string>
+    <string name="answer_2">Open the SoundWatch app in your watch and click on the microphone icon.
+        That will begin listening capabilities.</string>
+
+    <string name="question_3">My watch is not responding to touch or buttons.  How do I get it to respond?</string>
+    <string name="answer_3">Your watch might be low in battery. Recharge and try again.</string>
+
+    <string name="question_4">How do I select and deselect sounds for the watch to listen for?</string>
+    <string name="answer_4">On the phone app, open SoundWatch.  You then will have a list of sounds.
+    Simply uncheck the sounds you do not want the watch to listen for.
+        Leave checked or recheck the sounds you want to listen for.</string>
+
+    <string name="question_5">How do I snooze a sound on my watch?</string>
+    <string name="answer_5">In the pop-up notification, there will be a button labeled “snooze”
+        that you can press to snooze for a specified amount of time.  If you would like more options
+        for the timing of the snooze, simply press “open” and it will display more options for you to press.</string>
+
+    <string name="question_6">How do I see notifications if they aren’t popping up?</string>
+    <string name="answer_6">If your watch is vibrating but no messages are popping up,
+        you can swipe up on your watchface and the current and past notifications will display. </string>
+    <string name="about_description">"SoundWatch is a smartwatch-based app that provides glanceable, always-available sound feedback.
+        \nIt began on September 1st, 2018, and is led by a hard of hearing University of Washington doctoral student who wanted to build for his community. Thus, SoundWatch has involved the DHH communities at many stages of its development, along with faculty advisors, student developers, programmers, and UI/UX designers.
+        \nThe project is part of the Makeability Lab at the University of Washington whose mission is to “design, build and study interactive tools and techniques to address pressing societal challenges.” Sponsored by the National Science Foundation, SoundWatch app is freely available and the code is open-sourced for anyone wanting to learn more and contribute to its development.
+        \n\nThank you for using SoundWatch!
+        \nThis is a beta release, so always feel free to connect with us to provide feedback so we can improve or to just say Hi!
+    </string>
+    <string name="feedback">Send us Feedback!</string>
+    <string name="arrow">Arrow</string>
+    <!-- Preference Titles -->
+    <string name="first_preference">General Settings</string>
+    <string name="second_preference">Watch Setting </string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="setting">Settings</string>
+    <!-- Foreground Service Preferences -->
+    <string name="foreground_title">Foreground Service</string>
+    <string name="foreground_summary_on">Service running in foreground</string>
+    <string name="foreground_summary_off">Service running in background</string>
+    <string name="sleep_mode_description">Sleep mode settings description</string>
+    <string name="connect_status_summary">Sound Watch will be unable to start listening if Sleep Mode is ON</string>
+    <string name="db_threshold_description">Adjust the base sound level threshold</string>
+    <string name="email">" " soundwatch@cs.uw.edu</string>
+    <string name="website">" " soundwatch.cs.washington.edu</string>
+    <string name="version"><b>Version 1.05</b></string>
+</resources>

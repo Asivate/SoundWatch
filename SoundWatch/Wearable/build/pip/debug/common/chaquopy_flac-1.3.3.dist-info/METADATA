@@ -1,0 +1,8 @@
+Metadata-Version: 1.2
+Name: chaquopy-flac
+Version: 1.3.3
+Summary: 
+Download-URL: 
+Requires-Dist: chaquopy-libogg (>=1.3.4)
+Requires-Dist: chaquopy-libcxx (>=7000)
+

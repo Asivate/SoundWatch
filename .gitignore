@@ -1,0 +1,49 @@
+# Keep only essential ignores for team collaboration
+
+# IDE and OS files
+.DS_Store
+.idea/workspace.xml
+.idea/tasks.xml
+.vscode/
+
+# Build and generated files
+**/build/
+**/generated/
+*.class
+*.dex
+*.apk
+*.aab
+*.aar
+*.ap_
+/captures/
+.gradle/
+bin/
+*.so
+*.imy
+
+# Log files
+*.log
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# External native build folder
+.externalNativeBuild
+.cxx/
+
+# Temporary files
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+
+# Python
+__pycache__/
+
+# TensorFlow Lite model files
+*.tflite
+SoundWatch/Application/build/intermediates/assets/debug/sw_model_2.tflite
+SoundWatch/Wearable/src/main/assets/sw_model_2.tflite
+
+# Python virtual environment and dependencies
+**/chaquopy/

@@ -1,0 +1,199 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.chaquo.python'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    namespace "edu.washington.cs.soundwatch"
+    compileSdkVersion 34
+    buildToolsVersion "34.0.0"
+    
+    defaultConfig {
+        applicationId "edu.washington.cs.soundwatch"
+        minSdkVersion 26
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+
+        python {
+            buildPython "py", "-3.8"
+            version "3.8"
+            pip {
+                // Use pre-built wheels for better performance
+                options "--only-binary=:all:"
+                install "wheel"
+                install "numpy"
+                install "soundfile"
+                install "scipy"
+                install "audioread"
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            crunchPngs false
+        }
+    }
+    
+    buildFeatures {
+        buildConfig true
+        viewBinding true
+    }
+    
+    androidResources {
+        additionalParameters += ['--warn-manifest-validation']
+    }
+    
+    configurations.all {
+        resolutionStrategy {
+            force 'androidx.test:core:1.5.0'
+            force 'androidx.test:monitor:1.6.1'
+            preferProjectModules()
+            cacheChangingModulesFor 0, 'seconds'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE*'
+        exclude 'META-INF/NOTICE*'
+        exclude 'META-INF/*.kotlin_module'
+        exclude 'META-INF/AL2.0'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+    aaptOptions {
+        cruncherEnabled = false
+        noCompress "tflite"
+    }
+
+    dexOptions {
+        preDexLibraries true
+        maxProcessCount 8
+        javaMaxHeapSize "4g"
+    }
+}
+
+repositories {
+    google()
+    mavenCentral()
+    maven {
+        url "https://jitpack.io"
+        credentials { username authToken }
+    }
+    jcenter()
+    maven { url "https://dl.bintray.com/kuassivi/maven" }
+}
+
+dependencies {
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
+
+    implementation 'com.google.android.play:core:1.10.3'
+    implementation 'com.google.android.gms:play-services-wearable:18.1.0'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+    implementation 'androidx.activity:activity:1.6.1'
+    implementation 'androidx.activity:activity-ktx:1.6.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.wear:wear:1.3.0'
+
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:32.7.1')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-crashlytics'
+
+    wearApp project(':Wearable')
+
+    // Import tflite dependencies
+    implementation 'org.tensorflow:tensorflow-lite:2.14.0'
+    implementation 'org.tensorflow:tensorflow-lite-gpu:2.14.0'
+    implementation 'org.tensorflow:tensorflow-lite-support:0.4.4'
+
+    // Tutorial View dependency
+    implementation 'com.github.AppIntro:AppIntro:6.1.0'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // SocketIO
+    implementation 'com.github.nkzawa:socket.io-client:0.6.0'
+
+    // Scalable UI
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    implementation 'androidx.preference:preference:1.1.1'
+
+    // Android Testing
+    androidTestImplementation 'androidx.test:core:1.5.0'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test:rules:1.5.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+
+// The sample build uses multiple directories to
+// keep boilerplate and common code separate from
+// the main sample code.
+List<String> dirs = [
+    'main',     // main sample code; look here for the interesting stuff.
+    'common',   // components that are reused by multiple samples
+    'template'] // boilerplate code that is generated by the sample template process
+
+android {
+    compileSdkVersion 34
+
+    defaultConfig {
+        minSdkVersion 26
+        targetSdkVersion 34
+    }
+
+    sourceSets {
+        main {
+            dirs.each { dir ->
+                java.srcDirs "src/${dir}/java"
+                res.srcDirs "src/${dir}/res"
+            }
+        }
+        androidTest.setRoot('tests')
+        androidTest.java.srcDirs = ['tests/src']
+
+    }
+    lintOptions {
+        abortOnError false
+    }
+    assetPacks = [ ":InstallTimePack"]
+}
+
+allprojects {
+    tasks.withType(JavaCompile) {
+        options.compilerArgs << "-Xlint:deprecation"
+    }
+}

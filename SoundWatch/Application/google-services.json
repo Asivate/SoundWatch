@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "364965198833",
+    "project_id": "asivate-379b3",
+    "storage_bucket": "asivate-379b3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364965198833:android:2498844b87419e9ade2250",
+        "android_client_info": {
+          "package_name": "edu.washington.cs.soundwatch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuGuIfKfvkvqCL2NiUREN_dZLVzSDx1Q0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

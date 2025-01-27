@@ -1,0 +1,908 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:2:1-119:12
+INJECTED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:2:1-119:12
+INJECTED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:2:1-119:12
+INJECTED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:2:1-119:12
+MERGED from [androidx.databinding:viewbinding:8.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\dd1715ec2ee756c82cbe901185363143\transformed\jetified-viewbinding-8.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.wear:wear-phone-interactions:1.0.1] C:\Users\hirwa\.gradle\caches\transforms-3\fa39769941963705391299ed20dc438e\transformed\jetified-wear-phone-interactions-1.0.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.wear:wear:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\7636e65ba12b3840736a5659e000f0e1\transformed\wear-1.3.0\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.wear:wear-remote-interactions:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\3c18ee8843b040854014f271744fc0d9\transformed\jetified-wear-remote-interactions-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-wearable:18.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\bfb50701f8d3baa130b7978dbccd07b8\transformed\jetified-play-services-wearable-18.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\hirwa\.gradle\caches\transforms-3\81a890806bb77df3c9cb3fe550674790\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.preference:preference:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\4e985385a99be92da38105f7cb25d988\transformed\preference-1.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\4badad3f7ceeccd87309530b9073aaa5\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\6e8311260ade52429947fadc3a42d24a\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\d3e8e6433da223ede0b98f4576b53afd\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] C:\Users\hirwa\.gradle\caches\transforms-3\7cbb87d7549a8c794651eb1411f12bbb\transformed\recyclerview-1.3.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\dcea3809df8dc4c0baac5a5ffbe0f036\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.media:media:1.6.0] C:\Users\hirwa\.gradle\caches\transforms-3\112c6c01b2c4a5bc80514b06a937d791\transformed\media-1.6.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\9a5bbbb74b50d783976ce301153d80d4\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\df84decdbffcdbf10a6a3cd678822922\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\88524d6ed3aaa013a36566279c761c14\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\hirwa\.gradle\caches\transforms-3\353d34e3e5c9bbb9a4359114fab45ed6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.3.6] C:\Users\hirwa\.gradle\caches\transforms-3\912b32335f0c7653bf88d6fe80f1aeb2\transformed\jetified-fragment-ktx-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-analytics:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\fc25d2825cae18e4146a4f1d0cf14caa\transformed\jetified-firebase-analytics-21.5.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:17:1-46:12
+MERGED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:17:1-43:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\cf19b3100bd1ace0b1f15cd300cd43b1\transformed\jetified-play-services-measurement-sdk-21.5.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:15:1-35:12
+MERGED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\0bac1a00a3aab94064286f0097124524\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f927d6b2cdc8fc5435ecc5635e81e30\transformed\jetified-play-services-measurement-impl-21.5.0\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\2602b3a522e2489d89c33c47d85ae6a6\transformed\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\8c51544457498377a4cbd39c231f2c86\transformed\jetified-play-services-measurement-sdk-api-21.5.0\AndroidManifest.xml:17:1-30:12
+MERGED from [com.google.android.gms:play-services-measurement-base:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\b2efa8ca5ba8d2981de3503b5a813be5\transformed\jetified-play-services-measurement-base-21.5.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\hirwa\.gradle\caches\transforms-3\2ddace35d39e093c0cd59a486d02c0e7\transformed\jetified-play-services-stats-17.0.2\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\d93554c3015e1dd16a96c991c5d351e2\transformed\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] C:\Users\hirwa\.gradle\caches\transforms-3\2323c00c6fb2f287fe0d4b5f775fccec\transformed\jetified-firebase-installations-interop-17.1.1\AndroidManifest.xml:15:1-19:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\ac8000db7b4d048c2574a8df9d7dfd51\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.activity:activity-ktx:1.6.0] C:\Users\hirwa\.gradle\caches\transforms-3\6341b4036a50ff44d77ae4a5291de0a1\transformed\jetified-activity-ktx-1.6.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\hirwa\.gradle\caches\transforms-3\a9051c0ac792a20c60948868b9c16065\transformed\jetified-activity-1.6.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\97e8074d128765dbe79087493432fc21\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\1749df5f9015c7e4fcadfb1e508f88da\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\74bde42a17f209b5fe67195b33587998\transformed\jetified-lifecycle-viewmodel-ktx-2.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\0afbe69056eb9e9576de26e6c369a861\transformed\jetified-lifecycle-livedata-core-ktx-2.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\911eae932cea9c34cc3c1da6d6aab928\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\d928c9a648a7c10e65401ab27b5699de\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\dc8f2ddd44f670257eab79870a66890c\transformed\lifecycle-viewmodel-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\a1d54c4bddeda76411c337e399c72b22\transformed\jetified-lifecycle-service-2.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\c649d4bb8dc3601bef2dbdd3850f6d6d\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\5638c39b204b5b536ea2c790bf5abf97\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\9d92ae73847bb1b8128bb892707118c2\transformed\jetified-savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\d352bae3c69637fa80e82d807aec3365\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\c2ed4bf9407215c36ad041609836f3a0\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\645ab5af4d7898e4cc3ab2a26673a98f\transformed\jetified-window-1.0.0\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.privacysandbox.ads:ads-adservices-java:1.0.0-beta05] C:\Users\hirwa\.gradle\caches\transforms-3\66dfa83557d7cc4ef4aafd30772ac973\transformed\jetified-ads-adservices-java-1.0.0-beta05\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\hirwa\.gradle\caches\transforms-3\a86b829c9eae39a3bfa7ba13866d8ef3\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.datastore:datastore-preferences:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\b240bfd80c0ba2f89558e6b82c4b02a1\transformed\jetified-datastore-preferences-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.datastore:datastore:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\58a66533540b4a75814356cced27b59b\transformed\jetified-datastore-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\hirwa\.gradle\caches\transforms-3\5e0182f0a0b592f5a7d7d399df648c0c\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\d62a7d10668b477ebdd54ceaa25f160c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\hirwa\.gradle\caches\transforms-3\e81faf121edaaeefcbed721971335b74\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\3e6a04fec4c8211492aa7030ab6a71b3\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\9b94f328b4fa6eb230b8d5a2af37f9dd\transformed\jetified-customview-poolingcontainer-1.0.0\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\abb6ef536a2bc2188fa6c19818607eee\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\670c8d96742c7ae24be1931394983fb5\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\d9929e4ba2543ffd6e767854c69949b4\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\ca3c51f8c7f6fe8ca6900812f5604151\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\c9a9dd36df9d30c1b00d3c58b2bc81e7\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\0afc65abcac3855e16acf2cd5faa0cff\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\hirwa\.gradle\caches\transforms-3\7676e26e4033b1fa1cf46f5ab0af57d1\transformed\transition-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\1de55bd72724b7002c57443da25b9d8a\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\0f72b8d7b9e010391705f2ca2e85ce4d\transformed\lifecycle-runtime-2.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\12e5673ef89b146ccb458536f4b84b70\transformed\jetified-lifecycle-runtime-ktx-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [org.tensorflow:tensorflow-lite-support:0.4.4] C:\Users\hirwa\.gradle\caches\transforms-3\0213a5dda8980d78266fdd5550841840\transformed\jetified-tensorflow-lite-support-0.4.4\AndroidManifest.xml:2:1-5:12
+MERGED from [org.tensorflow:tensorflow-lite:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\08e926f37d8c043852cc499ae19fb336\transformed\jetified-tensorflow-lite-2.14.0\AndroidManifest.xml:2:1-11:12
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\127e417e30ba2409025e70a961029bf2\transformed\jetified-tensorflow-lite-gpu-2.14.0\AndroidManifest.xml:2:1-11:12
+MERGED from [org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.4] C:\Users\hirwa\.gradle\caches\transforms-3\14599c4ca6f91a1bf773eb06765e45f1\transformed\jetified-tensorflow-lite-gpu-delegate-plugin-0.4.4\AndroidManifest.xml:2:1-6:12
+MERGED from [org.tensorflow:tensorflow-lite-gpu-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\7740e4bfa566619f6f67855b7bfac150\transformed\jetified-tensorflow-lite-gpu-api-2.14.0\AndroidManifest.xml:2:1-21:12
+MERGED from [com.google.firebase:firebase-config-interop:16.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\59ed820f9bf6b4e0b26f976df32e6e1f\transformed\jetified-firebase-config-interop-16.0.0\AndroidManifest.xml:15:1-20:12
+MERGED from [com.google.firebase:firebase-datatransport:18.1.8] C:\Users\hirwa\.gradle\caches\transforms-3\c500e382e975fb10898a4cbff354f778\transformed\jetified-firebase-datatransport-18.1.8\AndroidManifest.xml:15:1-33:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:15:1-37:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.1] C:\Users\hirwa\.gradle\caches\transforms-3\77684ca09c951d2c5a9a2e7f05a38c4f\transformed\jetified-firebase-encoders-json-18.0.1\AndroidManifest.xml:15:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\hirwa\.gradle\caches\transforms-3\93a0833c48dc61639f3a7bf69f5f020e\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\46f805fa02b29bea6bf6aa5109119d48\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\e79ed4ca319ed3efca9e68ed23d9928c\transformed\jetified-transport-api-3.0.0\AndroidManifest.xml:15:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\7e2bacf061259dbb0212d872321421c6\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\hirwa\.gradle\caches\transforms-3\848a2d294e30d9d3b7570e35dff28756\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\b85e502fc054dd9cf39c1f7e621b6fbc\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\2c6934155dec82901ca0cdcc815f315c\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\c35bf8ced3de536f4f7755d19c9d184f\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\c32cef9382873f798966d0e20ba77957\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\165e6b836ff84c617ab343c5de1cbac3\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.1.5] C:\Users\hirwa\.gradle\caches\transforms-3\520f3956b470dbc57c72c49b80aeaaf3\transformed\jetified-firebase-components-17.1.5\AndroidManifest.xml:15:1-20:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\4f00f5bed6df4e2acaef4564581b5a99\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
+MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.4] C:\Users\hirwa\.gradle\caches\transforms-3\e657efb7d0276550cacfcaa702a7eeca\transformed\jetified-tensorflow-lite-support-api-0.4.4\AndroidManifest.xml:2:1-5:12
+MERGED from [org.tensorflow:tensorflow-lite-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\6b2e9ea2e9c8c37414671ed2d8401900\transformed\jetified-tensorflow-lite-api-2.14.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\hirwa\.gradle\caches\transforms-3\528e6c82fe7f42fd2793b6d132730ee9\transformed\jetified-image-1.0.0-beta1\AndroidManifest.xml:2:1-9:12
+	package
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:3:5-48
+		INJECTED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:5:5-68
+MERGED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f927d6b2cdc8fc5435ecc5635e81e30\transformed\jetified-play-services-measurement-impl-21.5.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f927d6b2cdc8fc5435ecc5635e81e30\transformed\jetified-play-services-measurement-impl-21.5.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\8c51544457498377a4cbd39c231f2c86\transformed\jetified-play-services-measurement-sdk-api-21.5.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\8c51544457498377a4cbd39c231f2c86\transformed\jetified-play-services-measurement-sdk-api-21.5.0\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:5:22-65
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:6:5-82
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:6:22-79
+uses-permission#android.permission.VIBRATE
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:7:5-66
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:7:22-63
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:7:5-67
+MERGED from [com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:7:5-67
+MERGED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f927d6b2cdc8fc5435ecc5635e81e30\transformed\jetified-play-services-measurement-impl-21.5.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f927d6b2cdc8fc5435ecc5635e81e30\transformed\jetified-play-services-measurement-impl-21.5.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\8c51544457498377a4cbd39c231f2c86\transformed\jetified-play-services-measurement-sdk-api-21.5.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\8c51544457498377a4cbd39c231f2c86\transformed\jetified-play-services-measurement-sdk-api-21.5.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:25:5-67
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:8:22-64
+uses-feature#android.hardware.type.watch
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:9:5-64
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:9:19-61
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:12:5-71
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:12:22-68
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:13:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f927d6b2cdc8fc5435ecc5635e81e30\transformed\jetified-play-services-measurement-impl-21.5.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f927d6b2cdc8fc5435ecc5635e81e30\transformed\jetified-play-services-measurement-impl-21.5.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\8c51544457498377a4cbd39c231f2c86\transformed\jetified-play-services-measurement-sdk-api-21.5.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\8c51544457498377a4cbd39c231f2c86\transformed\jetified-play-services-measurement-sdk-api-21.5.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:13:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:14:5-75
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:14:22-72
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:15:5-76
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:15:22-74
+application
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:18:5-117:19
+INJECTED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:18:5-117:19
+MERGED from [androidx.wear:wear:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\7636e65ba12b3840736a5659e000f0e1\transformed\wear-1.3.0\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.wear:wear:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\7636e65ba12b3840736a5659e000f0e1\transformed\wear-1.3.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-wearable:18.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\bfb50701f8d3baa130b7978dbccd07b8\transformed\jetified-play-services-wearable-18.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-wearable:18.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\bfb50701f8d3baa130b7978dbccd07b8\transformed\jetified-play-services-wearable-18.1.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\hirwa\.gradle\caches\transforms-3\81a890806bb77df3c9cb3fe550674790\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\hirwa\.gradle\caches\transforms-3\81a890806bb77df3c9cb3fe550674790\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\dcea3809df8dc4c0baac5a5ffbe0f036\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\dcea3809df8dc4c0baac5a5ffbe0f036\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\hirwa\.gradle\caches\transforms-3\353d34e3e5c9bbb9a4359114fab45ed6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\hirwa\.gradle\caches\transforms-3\353d34e3e5c9bbb9a4359114fab45ed6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.firebase:firebase-analytics:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\fc25d2825cae18e4146a4f1d0cf14caa\transformed\jetified-firebase-analytics-21.5.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\fc25d2825cae18e4146a4f1d0cf14caa\transformed\jetified-firebase-analytics-21.5.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:29:5-41:19
+MERGED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:29:5-41:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\cf19b3100bd1ace0b1f15cd300cd43b1\transformed\jetified-play-services-measurement-sdk-21.5.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\cf19b3100bd1ace0b1f15cd300cd43b1\transformed\jetified-play-services-measurement-sdk-21.5.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:11:5-22:19
+MERGED from [com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:11:5-22:19
+MERGED from [com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:21:5-33:19
+MERGED from [com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:21:5-33:19
+MERGED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:11:5-22:19
+MERGED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:11:5-22:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\0bac1a00a3aab94064286f0097124524\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\0bac1a00a3aab94064286f0097124524\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f927d6b2cdc8fc5435ecc5635e81e30\transformed\jetified-play-services-measurement-impl-21.5.0\AndroidManifest.xml:29:5-30:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f927d6b2cdc8fc5435ecc5635e81e30\transformed\jetified-play-services-measurement-impl-21.5.0\AndroidManifest.xml:29:5-30:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\2602b3a522e2489d89c33c47d85ae6a6\transformed\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\2602b3a522e2489d89c33c47d85ae6a6\transformed\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\b2efa8ca5ba8d2981de3503b5a813be5\transformed\jetified-play-services-measurement-base-21.5.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\b2efa8ca5ba8d2981de3503b5a813be5\transformed\jetified-play-services-measurement-base-21.5.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\hirwa\.gradle\caches\transforms-3\2ddace35d39e093c0cd59a486d02c0e7\transformed\jetified-play-services-stats-17.0.2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\hirwa\.gradle\caches\transforms-3\2ddace35d39e093c0cd59a486d02c0e7\transformed\jetified-play-services-stats-17.0.2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\d93554c3015e1dd16a96c991c5d351e2\transformed\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\d93554c3015e1dd16a96c991c5d351e2\transformed\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\c649d4bb8dc3601bef2dbdd3850f6d6d\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\c649d4bb8dc3601bef2dbdd3850f6d6d\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.window:window:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\645ab5af4d7898e4cc3ab2a26673a98f\transformed\jetified-window-1.0.0\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\645ab5af4d7898e4cc3ab2a26673a98f\transformed\jetified-window-1.0.0\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\hirwa\.gradle\caches\transforms-3\a86b829c9eae39a3bfa7ba13866d8ef3\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\hirwa\.gradle\caches\transforms-3\a86b829c9eae39a3bfa7ba13866d8ef3\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\hirwa\.gradle\caches\transforms-3\5e0182f0a0b592f5a7d7d399df648c0c\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\hirwa\.gradle\caches\transforms-3\5e0182f0a0b592f5a7d7d399df648c0c\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\d62a7d10668b477ebdd54ceaa25f160c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\d62a7d10668b477ebdd54ceaa25f160c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [org.tensorflow:tensorflow-lite:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\08e926f37d8c043852cc499ae19fb336\transformed\jetified-tensorflow-lite-2.14.0\AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\08e926f37d8c043852cc499ae19fb336\transformed\jetified-tensorflow-lite-2.14.0\AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\127e417e30ba2409025e70a961029bf2\transformed\jetified-tensorflow-lite-gpu-2.14.0\AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\127e417e30ba2409025e70a961029bf2\transformed\jetified-tensorflow-lite-gpu-2.14.0\AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.4] C:\Users\hirwa\.gradle\caches\transforms-3\14599c4ca6f91a1bf773eb06765e45f1\transformed\jetified-tensorflow-lite-gpu-delegate-plugin-0.4.4\AndroidManifest.xml:4:4-5:18
+MERGED from [org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.4] C:\Users\hirwa\.gradle\caches\transforms-3\14599c4ca6f91a1bf773eb06765e45f1\transformed\jetified-tensorflow-lite-gpu-delegate-plugin-0.4.4\AndroidManifest.xml:4:4-5:18
+MERGED from [org.tensorflow:tensorflow-lite-gpu-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\7740e4bfa566619f6f67855b7bfac150\transformed\jetified-tensorflow-lite-gpu-api-2.14.0\AndroidManifest.xml:5:5-19:19
+MERGED from [org.tensorflow:tensorflow-lite-gpu-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\7740e4bfa566619f6f67855b7bfac150\transformed\jetified-tensorflow-lite-gpu-api-2.14.0\AndroidManifest.xml:5:5-19:19
+MERGED from [com.google.firebase:firebase-datatransport:18.1.8] C:\Users\hirwa\.gradle\caches\transforms-3\c500e382e975fb10898a4cbff354f778\transformed\jetified-firebase-datatransport-18.1.8\AndroidManifest.xml:23:5-31:19
+MERGED from [com.google.firebase:firebase-datatransport:18.1.8] C:\Users\hirwa\.gradle\caches\transforms-3\c500e382e975fb10898a4cbff354f778\transformed\jetified-firebase-datatransport-18.1.8\AndroidManifest.xml:23:5-31:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:25:5-39:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\hirwa\.gradle\caches\transforms-3\93a0833c48dc61639f3a7bf69f5f020e\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\hirwa\.gradle\caches\transforms-3\93a0833c48dc61639f3a7bf69f5f020e\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\hirwa\.gradle\caches\transforms-3\848a2d294e30d9d3b7570e35dff28756\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\hirwa\.gradle\caches\transforms-3\848a2d294e30d9d3b7570e35dff28756\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [org.tensorflow:tensorflow-lite-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\6b2e9ea2e9c8c37414671ed2d8401900\transformed\jetified-tensorflow-lite-api-2.14.0\AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\6b2e9ea2e9c8c37414671ed2d8401900\transformed\jetified-tensorflow-lite-api-2.14.0\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\hirwa\.gradle\caches\transforms-3\528e6c82fe7f42fd2793b6d132730ee9\transformed\jetified-image-1.0.0-beta1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\hirwa\.gradle\caches\transforms-3\528e6c82fe7f42fd2793b6d132730ee9\transformed\jetified-image-1.0.0-beta1\AndroidManifest.xml:7:5-20
+	android:extractNativeLibs
+		INJECTED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:23:9-35
+	android:label
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:22:9-41
+	android:icon
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:21:9-43
+	android:allowBackup
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:20:9-35
+	android:theme
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:24:9-48
+	android:usesCleartextTraffic
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:25:9-44
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:19:9-52
+meta-data#com.google.firebase.messaging.default_notification_icon
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:29:9-31:74
+	android:resource
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:31:13-71
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:30:13-83
+meta-data#com.google.firebase.messaging.default_notification_color
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:34:9-36:49
+	android:resource
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:36:13-46
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:35:13-84
+uses-library#com.google.android.wearable
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:39:9-41:39
+MERGED from [androidx.wear:wear:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\7636e65ba12b3840736a5659e000f0e1\transformed\wear-1.3.0\AndroidManifest.xml:23:9-25:40
+MERGED from [androidx.wear:wear:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\7636e65ba12b3840736a5659e000f0e1\transformed\wear-1.3.0\AndroidManifest.xml:23:9-25:40
+	android:required
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:41:13-36
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:40:13-55
+meta-data#com.google.android.wearable.standalone
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:46:9-48:36
+	android:value
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:48:13-33
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:47:13-66
+meta-data#com.google.android.gms.version
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:50:9-52:73
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\d62a7d10668b477ebdd54ceaa25f160c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\d62a7d10668b477ebdd54ceaa25f160c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:52:17-70
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:51:17-62
+service#edu.washington.cs.soundwatch.wear.datalayer.DataLayerListenerService
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:54:9-86:19
+	android:exported
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:56:17-40
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:55:17-67
+intent-filter#action:name:com.google.android.gms.wearable.DATA_CHANGED+data:host:*+data:pathPrefix:/count+data:scheme:wear
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:57:13-61:29
+action#com.google.android.gms.wearable.DATA_CHANGED
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:59:17-87
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:59:25-84
+data
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:17-91
+	android:host
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:45-61
+	android:scheme
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:23-44
+	android:pathPrefix
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:62-89
+intent-filter#action:name:com.google.android.gms.wearable.MESSAGE_RECEIVED+data:host:*+data:pathPrefix:/start-activity+data:scheme:wear
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:62:13-65:29
+action#com.google.android.gms.wearable.MESSAGE_RECEIVED
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:63:17-91
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:63:25-88
+intent-filter#action:name:com.google.android.gms.wearable.MESSAGE_RECEIVED+data:host:*+data:pathPrefix:/audio-prediction+data:scheme:wear
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:66:13-69:29
+intent-filter#action:name:com.google.android.gms.wearable.MESSAGE_RECEIVED+data:host:*+data:pathPrefix:/SOUND_ENABLE_FROM_PHONE_PATH+data:scheme:wear
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:70:13-73:29
+intent-filter#action:name:com.google.android.gms.wearable.MESSAGE_RECEIVED+data:host:*+data:pathPrefix:/SEND_ALL_AUDIO_PREDICTIONS_FROM_PHONE_PATH+data:scheme:wear
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:74:13-77:29
+intent-filter#action:name:com.google.android.gms.wearable.MESSAGE_RECEIVED+data:host:*+data:pathPrefix:/SEND_FOREGROUND_SERVICE_STATUS_FROM_PHONE_PATH+data:scheme:wear
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:78:13-81:29
+intent-filter#action:name:com.google.android.gms.wearable.MESSAGE_RECEIVED+data:host:*+data:pathPrefix:/SEND_LISTENING_STATUS_FROM_PHONE_PATH+data:scheme:wear
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:82:13-85:29
+service#edu.washington.cs.soundwatch.wear.service.ForegroundService
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:88:9-92:19
+	android:enabled
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:90:13-35
+	android:exported
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:91:13-36
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:89:13-54
+service#edu.washington.cs.soundwatch.wear.service.SnoozeSoundService
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:93:9-96:19
+	android:exported
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:95:13-37
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:94:13-55
+activity#edu.washington.cs.soundwatch.wear.ui.activity.MainActivity
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:98:9-108:20
+	android:label
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:101:13-45
+	android:launchMode
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:102:13-44
+	android:exported
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:100:13-36
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:99:13-53
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:103:13-107:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:104:17-69
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:104:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:106:17-77
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:106:27-74
+receiver#edu.washington.cs.soundwatch.wear.utils.AlarmReceiver
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:110:9-116:20
+	android:exported
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:112:13-36
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:111:13-48
+intent-filter#action:name:edu.washington.cs.soundwatch.almMgr
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:113:13-115:29
+action#edu.washington.cs.soundwatch.almMgr
+ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:114:17-78
+	android:name
+		ADDED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:114:25-75
+uses-sdk
+INJECTED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml
+INJECTED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:8.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\dd1715ec2ee756c82cbe901185363143\transformed\jetified-viewbinding-8.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:8.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\dd1715ec2ee756c82cbe901185363143\transformed\jetified-viewbinding-8.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.wear:wear-phone-interactions:1.0.1] C:\Users\hirwa\.gradle\caches\transforms-3\fa39769941963705391299ed20dc438e\transformed\jetified-wear-phone-interactions-1.0.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.wear:wear-phone-interactions:1.0.1] C:\Users\hirwa\.gradle\caches\transforms-3\fa39769941963705391299ed20dc438e\transformed\jetified-wear-phone-interactions-1.0.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.wear:wear:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\7636e65ba12b3840736a5659e000f0e1\transformed\wear-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.wear:wear:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\7636e65ba12b3840736a5659e000f0e1\transformed\wear-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.wear:wear-remote-interactions:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\3c18ee8843b040854014f271744fc0d9\transformed\jetified-wear-remote-interactions-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.wear:wear-remote-interactions:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\3c18ee8843b040854014f271744fc0d9\transformed\jetified-wear-remote-interactions-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-wearable:18.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\bfb50701f8d3baa130b7978dbccd07b8\transformed\jetified-play-services-wearable-18.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-wearable:18.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\bfb50701f8d3baa130b7978dbccd07b8\transformed\jetified-play-services-wearable-18.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\hirwa\.gradle\caches\transforms-3\81a890806bb77df3c9cb3fe550674790\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\hirwa\.gradle\caches\transforms-3\81a890806bb77df3c9cb3fe550674790\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.preference:preference:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\4e985385a99be92da38105f7cb25d988\transformed\preference-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.preference:preference:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\4e985385a99be92da38105f7cb25d988\transformed\preference-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\4badad3f7ceeccd87309530b9073aaa5\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\4badad3f7ceeccd87309530b9073aaa5\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\6e8311260ade52429947fadc3a42d24a\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\6e8311260ade52429947fadc3a42d24a\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\d3e8e6433da223ede0b98f4576b53afd\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\d3e8e6433da223ede0b98f4576b53afd\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] C:\Users\hirwa\.gradle\caches\transforms-3\7cbb87d7549a8c794651eb1411f12bbb\transformed\recyclerview-1.3.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] C:\Users\hirwa\.gradle\caches\transforms-3\7cbb87d7549a8c794651eb1411f12bbb\transformed\recyclerview-1.3.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\dcea3809df8dc4c0baac5a5ffbe0f036\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\dcea3809df8dc4c0baac5a5ffbe0f036\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.6.0] C:\Users\hirwa\.gradle\caches\transforms-3\112c6c01b2c4a5bc80514b06a937d791\transformed\media-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.6.0] C:\Users\hirwa\.gradle\caches\transforms-3\112c6c01b2c4a5bc80514b06a937d791\transformed\media-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\9a5bbbb74b50d783976ce301153d80d4\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\9a5bbbb74b50d783976ce301153d80d4\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\df84decdbffcdbf10a6a3cd678822922\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\df84decdbffcdbf10a6a3cd678822922\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\88524d6ed3aaa013a36566279c761c14\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\88524d6ed3aaa013a36566279c761c14\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\hirwa\.gradle\caches\transforms-3\353d34e3e5c9bbb9a4359114fab45ed6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\hirwa\.gradle\caches\transforms-3\353d34e3e5c9bbb9a4359114fab45ed6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment-ktx:1.3.6] C:\Users\hirwa\.gradle\caches\transforms-3\912b32335f0c7653bf88d6fe80f1aeb2\transformed\jetified-fragment-ktx-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.3.6] C:\Users\hirwa\.gradle\caches\transforms-3\912b32335f0c7653bf88d6fe80f1aeb2\transformed\jetified-fragment-ktx-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-analytics:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\fc25d2825cae18e4146a4f1d0cf14caa\transformed\jetified-firebase-analytics-21.5.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\fc25d2825cae18e4146a4f1d0cf14caa\transformed\jetified-firebase-analytics-21.5.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\cf19b3100bd1ace0b1f15cd300cd43b1\transformed\jetified-play-services-measurement-sdk-21.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\cf19b3100bd1ace0b1f15cd300cd43b1\transformed\jetified-play-services-measurement-sdk-21.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\0bac1a00a3aab94064286f0097124524\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\0bac1a00a3aab94064286f0097124524\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:19:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f927d6b2cdc8fc5435ecc5635e81e30\transformed\jetified-play-services-measurement-impl-21.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f927d6b2cdc8fc5435ecc5635e81e30\transformed\jetified-play-services-measurement-impl-21.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\2602b3a522e2489d89c33c47d85ae6a6\transformed\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\2602b3a522e2489d89c33c47d85ae6a6\transformed\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\8c51544457498377a4cbd39c231f2c86\transformed\jetified-play-services-measurement-sdk-api-21.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\8c51544457498377a4cbd39c231f2c86\transformed\jetified-play-services-measurement-sdk-api-21.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\b2efa8ca5ba8d2981de3503b5a813be5\transformed\jetified-play-services-measurement-base-21.5.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\b2efa8ca5ba8d2981de3503b5a813be5\transformed\jetified-play-services-measurement-base-21.5.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\hirwa\.gradle\caches\transforms-3\2ddace35d39e093c0cd59a486d02c0e7\transformed\jetified-play-services-stats-17.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\hirwa\.gradle\caches\transforms-3\2ddace35d39e093c0cd59a486d02c0e7\transformed\jetified-play-services-stats-17.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\d93554c3015e1dd16a96c991c5d351e2\transformed\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\d93554c3015e1dd16a96c991c5d351e2\transformed\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] C:\Users\hirwa\.gradle\caches\transforms-3\2323c00c6fb2f287fe0d4b5f775fccec\transformed\jetified-firebase-installations-interop-17.1.1\AndroidManifest.xml:17:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] C:\Users\hirwa\.gradle\caches\transforms-3\2323c00c6fb2f287fe0d4b5f775fccec\transformed\jetified-firebase-installations-interop-17.1.1\AndroidManifest.xml:17:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\ac8000db7b4d048c2574a8df9d7dfd51\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\ac8000db7b4d048c2574a8df9d7dfd51\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.activity:activity-ktx:1.6.0] C:\Users\hirwa\.gradle\caches\transforms-3\6341b4036a50ff44d77ae4a5291de0a1\transformed\jetified-activity-ktx-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.6.0] C:\Users\hirwa\.gradle\caches\transforms-3\6341b4036a50ff44d77ae4a5291de0a1\transformed\jetified-activity-ktx-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\hirwa\.gradle\caches\transforms-3\a9051c0ac792a20c60948868b9c16065\transformed\jetified-activity-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\hirwa\.gradle\caches\transforms-3\a9051c0ac792a20c60948868b9c16065\transformed\jetified-activity-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\97e8074d128765dbe79087493432fc21\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\97e8074d128765dbe79087493432fc21\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\1749df5f9015c7e4fcadfb1e508f88da\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\1749df5f9015c7e4fcadfb1e508f88da\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\74bde42a17f209b5fe67195b33587998\transformed\jetified-lifecycle-viewmodel-ktx-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\74bde42a17f209b5fe67195b33587998\transformed\jetified-lifecycle-viewmodel-ktx-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\0afbe69056eb9e9576de26e6c369a861\transformed\jetified-lifecycle-livedata-core-ktx-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\0afbe69056eb9e9576de26e6c369a861\transformed\jetified-lifecycle-livedata-core-ktx-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\911eae932cea9c34cc3c1da6d6aab928\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\911eae932cea9c34cc3c1da6d6aab928\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\d928c9a648a7c10e65401ab27b5699de\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\d928c9a648a7c10e65401ab27b5699de\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\dc8f2ddd44f670257eab79870a66890c\transformed\lifecycle-viewmodel-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\dc8f2ddd44f670257eab79870a66890c\transformed\lifecycle-viewmodel-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\a1d54c4bddeda76411c337e399c72b22\transformed\jetified-lifecycle-service-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\a1d54c4bddeda76411c337e399c72b22\transformed\jetified-lifecycle-service-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\c649d4bb8dc3601bef2dbdd3850f6d6d\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\c649d4bb8dc3601bef2dbdd3850f6d6d\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\5638c39b204b5b536ea2c790bf5abf97\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\5638c39b204b5b536ea2c790bf5abf97\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\9d92ae73847bb1b8128bb892707118c2\transformed\jetified-savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\9d92ae73847bb1b8128bb892707118c2\transformed\jetified-savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\d352bae3c69637fa80e82d807aec3365\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\d352bae3c69637fa80e82d807aec3365\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\c2ed4bf9407215c36ad041609836f3a0\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\c2ed4bf9407215c36ad041609836f3a0\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\645ab5af4d7898e4cc3ab2a26673a98f\transformed\jetified-window-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\645ab5af4d7898e4cc3ab2a26673a98f\transformed\jetified-window-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.privacysandbox.ads:ads-adservices-java:1.0.0-beta05] C:\Users\hirwa\.gradle\caches\transforms-3\66dfa83557d7cc4ef4aafd30772ac973\transformed\jetified-ads-adservices-java-1.0.0-beta05\AndroidManifest.xml:5:5-44
+MERGED from [androidx.privacysandbox.ads:ads-adservices-java:1.0.0-beta05] C:\Users\hirwa\.gradle\caches\transforms-3\66dfa83557d7cc4ef4aafd30772ac973\transformed\jetified-ads-adservices-java-1.0.0-beta05\AndroidManifest.xml:5:5-44
+MERGED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\hirwa\.gradle\caches\transforms-3\a86b829c9eae39a3bfa7ba13866d8ef3\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:20:5-44
+MERGED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\hirwa\.gradle\caches\transforms-3\a86b829c9eae39a3bfa7ba13866d8ef3\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\b240bfd80c0ba2f89558e6b82c4b02a1\transformed\jetified-datastore-preferences-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.datastore:datastore-preferences:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\b240bfd80c0ba2f89558e6b82c4b02a1\transformed\jetified-datastore-preferences-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.datastore:datastore:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\58a66533540b4a75814356cced27b59b\transformed\jetified-datastore-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.datastore:datastore:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\58a66533540b4a75814356cced27b59b\transformed\jetified-datastore-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\hirwa\.gradle\caches\transforms-3\5e0182f0a0b592f5a7d7d399df648c0c\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] C:\Users\hirwa\.gradle\caches\transforms-3\5e0182f0a0b592f5a7d7d399df648c0c\transformed\jetified-play-services-tasks-18.0.2\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\d62a7d10668b477ebdd54ceaa25f160c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\d62a7d10668b477ebdd54ceaa25f160c\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\hirwa\.gradle\caches\transforms-3\e81faf121edaaeefcbed721971335b74\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\hirwa\.gradle\caches\transforms-3\e81faf121edaaeefcbed721971335b74\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\3e6a04fec4c8211492aa7030ab6a71b3\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\3e6a04fec4c8211492aa7030ab6a71b3\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\9b94f328b4fa6eb230b8d5a2af37f9dd\transformed\jetified-customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\9b94f328b4fa6eb230b8d5a2af37f9dd\transformed\jetified-customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\abb6ef536a2bc2188fa6c19818607eee\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\abb6ef536a2bc2188fa6c19818607eee\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\670c8d96742c7ae24be1931394983fb5\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\670c8d96742c7ae24be1931394983fb5\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\d9929e4ba2543ffd6e767854c69949b4\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\d9929e4ba2543ffd6e767854c69949b4\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\ca3c51f8c7f6fe8ca6900812f5604151\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\ca3c51f8c7f6fe8ca6900812f5604151\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\c9a9dd36df9d30c1b00d3c58b2bc81e7\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\c9a9dd36df9d30c1b00d3c58b2bc81e7\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\0afc65abcac3855e16acf2cd5faa0cff\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\hirwa\.gradle\caches\transforms-3\0afc65abcac3855e16acf2cd5faa0cff\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\hirwa\.gradle\caches\transforms-3\7676e26e4033b1fa1cf46f5ab0af57d1\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\hirwa\.gradle\caches\transforms-3\7676e26e4033b1fa1cf46f5ab0af57d1\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\1de55bd72724b7002c57443da25b9d8a\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\1de55bd72724b7002c57443da25b9d8a\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\0f72b8d7b9e010391705f2ca2e85ce4d\transformed\lifecycle-runtime-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\0f72b8d7b9e010391705f2ca2e85ce4d\transformed\lifecycle-runtime-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\12e5673ef89b146ccb458536f4b84b70\transformed\jetified-lifecycle-runtime-ktx-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\12e5673ef89b146ccb458536f4b84b70\transformed\jetified-lifecycle-runtime-ktx-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [org.tensorflow:tensorflow-lite-support:0.4.4] C:\Users\hirwa\.gradle\caches\transforms-3\0213a5dda8980d78266fdd5550841840\transformed\jetified-tensorflow-lite-support-0.4.4\AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite-support:0.4.4] C:\Users\hirwa\.gradle\caches\transforms-3\0213a5dda8980d78266fdd5550841840\transformed\jetified-tensorflow-lite-support-0.4.4\AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\08e926f37d8c043852cc499ae19fb336\transformed\jetified-tensorflow-lite-2.14.0\AndroidManifest.xml:6:5-7:38
+MERGED from [org.tensorflow:tensorflow-lite:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\08e926f37d8c043852cc499ae19fb336\transformed\jetified-tensorflow-lite-2.14.0\AndroidManifest.xml:6:5-7:38
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\127e417e30ba2409025e70a961029bf2\transformed\jetified-tensorflow-lite-gpu-2.14.0\AndroidManifest.xml:6:5-7:38
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\127e417e30ba2409025e70a961029bf2\transformed\jetified-tensorflow-lite-gpu-2.14.0\AndroidManifest.xml:6:5-7:38
+MERGED from [com.google.firebase:firebase-config-interop:16.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\59ed820f9bf6b4e0b26f976df32e6e1f\transformed\jetified-firebase-config-interop-16.0.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-config-interop:16.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\59ed820f9bf6b4e0b26f976df32e6e1f\transformed\jetified-firebase-config-interop-16.0.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-datatransport:18.1.8] C:\Users\hirwa\.gradle\caches\transforms-3\c500e382e975fb10898a4cbff354f778\transformed\jetified-firebase-datatransport-18.1.8\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-datatransport:18.1.8] C:\Users\hirwa\.gradle\caches\transforms-3\c500e382e975fb10898a4cbff354f778\transformed\jetified-firebase-datatransport-18.1.8\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.1] C:\Users\hirwa\.gradle\caches\transforms-3\77684ca09c951d2c5a9a2e7f05a38c4f\transformed\jetified-firebase-encoders-json-18.0.1\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.1] C:\Users\hirwa\.gradle\caches\transforms-3\77684ca09c951d2c5a9a2e7f05a38c4f\transformed\jetified-firebase-encoders-json-18.0.1\AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\hirwa\.gradle\caches\transforms-3\93a0833c48dc61639f3a7bf69f5f020e\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\hirwa\.gradle\caches\transforms-3\93a0833c48dc61639f3a7bf69f5f020e\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\46f805fa02b29bea6bf6aa5109119d48\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\46f805fa02b29bea6bf6aa5109119d48\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\e79ed4ca319ed3efca9e68ed23d9928c\transformed\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\e79ed4ca319ed3efca9e68ed23d9928c\transformed\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\7e2bacf061259dbb0212d872321421c6\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\7e2bacf061259dbb0212d872321421c6\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\hirwa\.gradle\caches\transforms-3\848a2d294e30d9d3b7570e35dff28756\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\hirwa\.gradle\caches\transforms-3\848a2d294e30d9d3b7570e35dff28756\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\b85e502fc054dd9cf39c1f7e621b6fbc\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\b85e502fc054dd9cf39c1f7e621b6fbc\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\2c6934155dec82901ca0cdcc815f315c\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\2c6934155dec82901ca0cdcc815f315c\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\c35bf8ced3de536f4f7755d19c9d184f\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\c35bf8ced3de536f4f7755d19c9d184f\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\c32cef9382873f798966d0e20ba77957\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\c32cef9382873f798966d0e20ba77957\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\165e6b836ff84c617ab343c5de1cbac3\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\165e6b836ff84c617ab343c5de1cbac3\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-components:17.1.5] C:\Users\hirwa\.gradle\caches\transforms-3\520f3956b470dbc57c72c49b80aeaaf3\transformed\jetified-firebase-components-17.1.5\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-components:17.1.5] C:\Users\hirwa\.gradle\caches\transforms-3\520f3956b470dbc57c72c49b80aeaaf3\transformed\jetified-firebase-components-17.1.5\AndroidManifest.xml:18:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\4f00f5bed6df4e2acaef4564581b5a99\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\4f00f5bed6df4e2acaef4564581b5a99\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.4] C:\Users\hirwa\.gradle\caches\transforms-3\e657efb7d0276550cacfcaa702a7eeca\transformed\jetified-tensorflow-lite-support-api-0.4.4\AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.4] C:\Users\hirwa\.gradle\caches\transforms-3\e657efb7d0276550cacfcaa702a7eeca\transformed\jetified-tensorflow-lite-support-api-0.4.4\AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\6b2e9ea2e9c8c37414671ed2d8401900\transformed\jetified-tensorflow-lite-api-2.14.0\AndroidManifest.xml:6:5-7:38
+MERGED from [org.tensorflow:tensorflow-lite-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\6b2e9ea2e9c8c37414671ed2d8401900\transformed\jetified-tensorflow-lite-api-2.14.0\AndroidManifest.xml:6:5-7:38
+MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\hirwa\.gradle\caches\transforms-3\528e6c82fe7f42fd2793b6d132730ee9\transformed\jetified-image-1.0.0-beta1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\hirwa\.gradle\caches\transforms-3\528e6c82fe7f42fd2793b6d132730ee9\transformed\jetified-image-1.0.0-beta1\AndroidManifest.xml:5:5-44
+	android:targetSdkVersion
+		INJECTED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\hirwa\.gradle\caches\transforms-3\353d34e3e5c9bbb9a4359114fab45ed6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\hirwa\.gradle\caches\transforms-3\353d34e3e5c9bbb9a4359114fab45ed6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\hirwa\.gradle\caches\transforms-3\353d34e3e5c9bbb9a4359114fab45ed6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\hirwa\.gradle\caches\transforms-3\353d34e3e5c9bbb9a4359114fab45ed6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f927d6b2cdc8fc5435ecc5635e81e30\transformed\jetified-play-services-measurement-impl-21.5.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f927d6b2cdc8fc5435ecc5635e81e30\transformed\jetified-play-services-measurement-impl-21.5.0\AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:30:13-85
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:36:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:39:9-43:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:41:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:40:13-87
+uses-permission#com.google.android.gms.permission.AD_ID
+ADDED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f927d6b2cdc8fc5435ecc5635e81e30\transformed\jetified-play-services-measurement-impl-21.5.0\AndroidManifest.xml:27:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f927d6b2cdc8fc5435ecc5635e81e30\transformed\jetified-play-services-measurement-impl-21.5.0\AndroidManifest.xml:27:5-79
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\2602b3a522e2489d89c33c47d85ae6a6\transformed\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\2602b3a522e2489d89c33c47d85ae6a6\transformed\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\8c51544457498377a4cbd39c231f2c86\transformed\jetified-play-services-measurement-sdk-api-21.5.0\AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\8c51544457498377a4cbd39c231f2c86\transformed\jetified-play-services-measurement-sdk-api-21.5.0\AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:25:22-76
+uses-permission#android.permission.ACCESS_ADSERVICES_ATTRIBUTION
+ADDED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:26:5-88
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\8c51544457498377a4cbd39c231f2c86\transformed\jetified-play-services-measurement-sdk-api-21.5.0\AndroidManifest.xml:27:5-88
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\8c51544457498377a4cbd39c231f2c86\transformed\jetified-play-services-measurement-sdk-api-21.5.0\AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:26:22-85
+uses-permission#android.permission.ACCESS_ADSERVICES_AD_ID
+ADDED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:27:5-82
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\8c51544457498377a4cbd39c231f2c86\transformed\jetified-play-services-measurement-sdk-api-21.5.0\AndroidManifest.xml:28:5-82
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\8c51544457498377a4cbd39c231f2c86\transformed\jetified-play-services-measurement-sdk-api-21.5.0\AndroidManifest.xml:28:5-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:27:22-79
+property
+ADDED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:30:9-32:61
+	android:resource
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:32:13-58
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:31:13-65
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:34:9-40:19
+MERGED from [com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:12:9-21:19
+MERGED from [com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:12:9-21:19
+MERGED from [com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:26:9-32:19
+MERGED from [com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:26:9-32:19
+MERGED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:12:9-21:19
+MERGED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:12:9-21:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\0bac1a00a3aab94064286f0097124524\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\0bac1a00a3aab94064286f0097124524\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:30:9-38:19
+MERGED from [com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:30:9-38:19
+MERGED from [com.google.firebase:firebase-datatransport:18.1.8] C:\Users\hirwa\.gradle\caches\transforms-3\c500e382e975fb10898a4cbff354f778\transformed\jetified-firebase-datatransport-18.1.8\AndroidManifest.xml:24:9-30:19
+MERGED from [com.google.firebase:firebase-datatransport:18.1.8] C:\Users\hirwa\.gradle\caches\transforms-3\c500e382e975fb10898a4cbff354f778\transformed\jetified-firebase-datatransport-18.1.8\AndroidManifest.xml:24:9-30:19
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:36:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:34:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:32:13-43
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:35:13-84
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:37:13-39:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:39:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:38:17-139
+meta-data#com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar
+ADDED from [com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:15:13-17:85
+	android:value
+		ADDED from [com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:16:17-126
+meta-data#com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar
+ADDED from [com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:19:17-115
+service#com.google.firebase.sessions.SessionLifecycleService
+ADDED from [com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:22:9-25:40
+	android:enabled
+		ADDED from [com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:24:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:23:13-80
+meta-data#com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar
+ADDED from [com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:29:13-31:85
+	android:value
+		ADDED from [com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:31:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:30:17-117
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar
+ADDED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
+meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar
+ADDED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\0bac1a00a3aab94064286f0097124524\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\0bac1a00a3aab94064286f0097124524\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\0bac1a00a3aab94064286f0097124524\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:25:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:27:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:26:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:28:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:24:13-77
+meta-data#com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar
+ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:37:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\c649d4bb8dc3601bef2dbdd3850f6d6d\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\c649d4bb8dc3601bef2dbdd3850f6d6d\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\hirwa\.gradle\caches\transforms-3\848a2d294e30d9d3b7570e35dff28756\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\hirwa\.gradle\caches\transforms-3\848a2d294e30d9d3b7570e35dff28756\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\c649d4bb8dc3601bef2dbdd3850f6d6d\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\c649d4bb8dc3601bef2dbdd3850f6d6d\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\c649d4bb8dc3601bef2dbdd3850f6d6d\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\645ab5af4d7898e4cc3ab2a26673a98f\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\645ab5af4d7898e4cc3ab2a26673a98f\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\645ab5af4d7898e4cc3ab2a26673a98f\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\645ab5af4d7898e4cc3ab2a26673a98f\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\645ab5af4d7898e4cc3ab2a26673a98f\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\645ab5af4d7898e4cc3ab2a26673a98f\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+uses-library#android.ext.adservices
+ADDED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\hirwa\.gradle\caches\transforms-3\a86b829c9eae39a3bfa7ba13866d8ef3\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
+	android:required
+		ADDED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\hirwa\.gradle\caches\transforms-3\a86b829c9eae39a3bfa7ba13866d8ef3\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\hirwa\.gradle\caches\transforms-3\a86b829c9eae39a3bfa7ba13866d8ef3\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+permission#edu.washington.cs.soundwatch.wear.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+uses-permission#edu.washington.cs.soundwatch.wear.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:2:1-119:12 reason: tensorflow_lite_support.acceleration.configuration has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:2:1-119:12 reason: tensorflow_lite_support.acceleration.configuration requested WRITE_EXTERNAL_STORAGE
+uses-native-library
+ADDED from [org.tensorflow:tensorflow-lite-gpu-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\7740e4bfa566619f6f67855b7bfac150\transformed\jetified-tensorflow-lite-gpu-api-2.14.0\AndroidManifest.xml:8:9-10:40
+	android:required
+		ADDED from [org.tensorflow:tensorflow-lite-gpu-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\7740e4bfa566619f6f67855b7bfac150\transformed\jetified-tensorflow-lite-gpu-api-2.14.0\AndroidManifest.xml:10:13-37
+	android:name
+		ADDED from [org.tensorflow:tensorflow-lite-gpu-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\7740e4bfa566619f6f67855b7bfac150\transformed\jetified-tensorflow-lite-gpu-api-2.14.0\AndroidManifest.xml:9:13-40
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:18.1.8] C:\Users\hirwa\.gradle\caches\transforms-3\c500e382e975fb10898a4cbff354f778\transformed\jetified-firebase-datatransport-18.1.8\AndroidManifest.xml:27:13-29:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:18.1.8] C:\Users\hirwa\.gradle\caches\transforms-3\c500e382e975fb10898a4cbff354f778\transformed\jetified-firebase-datatransport-18.1.8\AndroidManifest.xml:29:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:18.1.8] C:\Users\hirwa\.gradle\caches\transforms-3\c500e382e975fb10898a4cbff354f778\transformed\jetified-firebase-datatransport-18.1.8\AndroidManifest.xml:28:17-115
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:29:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:31:13-33:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:33:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:32:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92

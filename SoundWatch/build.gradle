@@ -1,0 +1,41 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven { 
+            url "https://chaquo.com/maven"
+            allowInsecureProtocol = true
+        }
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.2.0'
+        classpath 'com.google.gms:google-services:4.4.2'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.9'
+        classpath "com.chaquo.python:gradle:14.0.2"
+    }
+}
+
+plugins {
+    id 'com.chaquo.python' version '14.0.2' apply false
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { 
+            url "https://chaquo.com/maven"
+            allowInsecureProtocol = true
+        }
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+} 

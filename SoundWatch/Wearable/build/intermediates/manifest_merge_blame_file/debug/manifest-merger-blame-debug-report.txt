@@ -1,0 +1,564 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="edu.washington.cs.soundwatch.wear"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Not sure if needed but For firebase, but for waveful receiver and alarm manager -->
+11-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:5:5-68
+11-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:5:22-65
+12    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- For firebase -->
+12-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:6:5-82
+12-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:6:22-79
+13    <uses-permission android:name="android.permission.VIBRATE" />
+13-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:7:5-66
+13-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:7:22-63
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:8:5-67
+14-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:8:22-64
+15
+16    <uses-feature android:name="android.hardware.type.watch" />
+16-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:9:5-64
+16-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:9:19-61
+17
+18    <!-- the following permission is required to record audio using a microphone -->
+19    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+19-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:12:5-71
+19-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:12:22-68
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:13:5-79
+20-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:13:22-76
+21    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+21-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:14:5-75
+21-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:14:22-72
+22    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+22-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:15:5-76
+22-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:15:22-74
+23    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+23-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:26:5-110
+23-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:26:22-107
+24    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+24-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:25:5-79
+24-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:25:22-76
+25    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+25-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:26:5-88
+25-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:26:22-85
+26    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+26-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:27:5-82
+26-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:27:22-79
+27
+28    <permission
+28-->[androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+29        android:name="edu.washington.cs.soundwatch.wear.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+29-->[androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+30        android:protectionLevel="signature" />
+30-->[androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+31
+32    <uses-permission android:name="edu.washington.cs.soundwatch.wear.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+32-->[androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+32-->[androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+33    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+34    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" /> -->
+35    <application
+35-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:18:5-117:19
+36        android:name="edu.washington.cs.soundwatch.wear.application.MainApplication"
+36-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:19:9-52
+37        android:allowBackup="true"
+37-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:20:9-35
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.9.0] C:\Users\hirwa\.gradle\caches\transforms-3\ffc86cd01a105bb25ff3cd86e43c3847\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+39        android:debuggable="true"
+40        android:extractNativeLibs="false"
+41        android:icon="@mipmap/ic_launcher"
+41-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:21:9-43
+42        android:label="@string/app_name"
+42-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:22:9-41
+43        android:supportsRtl="true"
+43-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:23:9-35
+44        android:theme="@style/DisableBackSwipe"
+44-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:24:9-48
+45        android:usesCleartextTraffic="true" >
+45-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:25:9-44
+46
+47        <!--
+48        Set custom default icon. This is used when no icon is set for incoming notification messages.
+49        See README(https://goo.gl/l4GJaQ) for more.
+50        -->
+51        <meta-data
+51-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:29:9-31:74
+52            android:name="com.google.firebase.messaging.default_notification_icon"
+52-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:30:13-83
+53            android:resource="@drawable/ic_baseline_surround_sound_24" />
+53-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:31:13-71
+54        <!--
+55             Set color used with incoming notification messages. This is used when no color is set for the incoming
+56             notification message. See README(https://goo.gl/6BKBk7) for more.
+57        -->
+58        <meta-data
+58-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:34:9-36:49
+59            android:name="com.google.firebase.messaging.default_notification_color"
+59-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:35:13-84
+60            android:resource="@color/wl_blue" />
+60-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:36:13-46
+61
+62        <uses-library
+62-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:39:9-41:39
+63            android:name="com.google.android.wearable"
+63-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:40:13-55
+64            android:required="true" />
+64-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:41:13-36
+65        <!--
+66               Set to true if your app is Standalone, that is, it does not require the handheld
+67               app to run.
+68        -->
+69        <meta-data
+69-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:46:9-48:36
+70            android:name="com.google.android.wearable.standalone"
+70-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:47:13-66
+71            android:value="true" />
+71-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:48:13-33
+72        <meta-data
+72-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:50:9-52:73
+73            android:name="com.google.android.gms.version"
+73-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:51:17-62
+74            android:value="@integer/google_play_services_version" />
+74-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:52:17-70
+75
+76        <service
+76-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:54:9-86:19
+77            android:name="edu.washington.cs.soundwatch.wear.datalayer.DataLayerListenerService"
+77-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:55:17-67
+78            android:exported="true" >
+78-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:56:17-40
+79            <intent-filter>
+79-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:57:13-61:29
+80
+81                <!-- listeners receive events that match the action and data filters -->
+82                <action android:name="com.google.android.gms.wearable.DATA_CHANGED" />
+82-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:59:17-87
+82-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:59:25-84
+83
+84                <data
+84-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:17-91
+85                    android:host="*"
+85-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:45-61
+86                    android:pathPrefix="/count"
+86-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:62-89
+87                    android:scheme="wear" />
+87-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:23-44
+88            </intent-filter>
+89            <intent-filter>
+89-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:62:13-65:29
+90                <action android:name="com.google.android.gms.wearable.MESSAGE_RECEIVED" />
+90-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:63:17-91
+90-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:63:25-88
+91
+92                <data
+92-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:17-91
+93                    android:host="*"
+93-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:45-61
+94                    android:pathPrefix="/start-activity"
+94-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:62-89
+95                    android:scheme="wear" />
+95-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:23-44
+96            </intent-filter>
+97            <intent-filter>
+97-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:66:13-69:29
+98                <action android:name="com.google.android.gms.wearable.MESSAGE_RECEIVED" />
+98-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:63:17-91
+98-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:63:25-88
+99
+100                <data
+100-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:17-91
+101                    android:host="*"
+101-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:45-61
+102                    android:pathPrefix="/audio-prediction"
+102-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:62-89
+103                    android:scheme="wear" />
+103-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:23-44
+104            </intent-filter>
+105            <intent-filter>
+105-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:70:13-73:29
+106                <action android:name="com.google.android.gms.wearable.MESSAGE_RECEIVED" />
+106-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:63:17-91
+106-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:63:25-88
+107
+108                <data
+108-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:17-91
+109                    android:host="*"
+109-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:45-61
+110                    android:pathPrefix="/SOUND_ENABLE_FROM_PHONE_PATH"
+110-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:62-89
+111                    android:scheme="wear" />
+111-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:23-44
+112            </intent-filter>
+113            <intent-filter>
+113-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:74:13-77:29
+114                <action android:name="com.google.android.gms.wearable.MESSAGE_RECEIVED" />
+114-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:63:17-91
+114-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:63:25-88
+115
+116                <data
+116-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:17-91
+117                    android:host="*"
+117-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:45-61
+118                    android:pathPrefix="/SEND_ALL_AUDIO_PREDICTIONS_FROM_PHONE_PATH"
+118-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:62-89
+119                    android:scheme="wear" />
+119-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:23-44
+120            </intent-filter>
+121            <intent-filter>
+121-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:78:13-81:29
+122                <action android:name="com.google.android.gms.wearable.MESSAGE_RECEIVED" />
+122-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:63:17-91
+122-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:63:25-88
+123
+124                <data
+124-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:17-91
+125                    android:host="*"
+125-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:45-61
+126                    android:pathPrefix="/SEND_FOREGROUND_SERVICE_STATUS_FROM_PHONE_PATH"
+126-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:62-89
+127                    android:scheme="wear" />
+127-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:23-44
+128            </intent-filter>
+129            <intent-filter>
+129-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:82:13-85:29
+130                <action android:name="com.google.android.gms.wearable.MESSAGE_RECEIVED" />
+130-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:63:17-91
+130-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:63:25-88
+131
+132                <data
+132-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:17-91
+133                    android:host="*"
+133-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:45-61
+134                    android:pathPrefix="/SEND_LISTENING_STATUS_FROM_PHONE_PATH"
+134-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:62-89
+135                    android:scheme="wear" />
+135-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:60:23-44
+136            </intent-filter>
+137        </service>
+138        <service
+138-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:88:9-92:19
+139            android:name="edu.washington.cs.soundwatch.wear.service.ForegroundService"
+139-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:89:13-54
+140            android:enabled="true"
+140-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:90:13-35
+141            android:exported="true" >
+141-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:91:13-36
+142        </service>
+143        <service
+143-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:93:9-96:19
+144            android:name="edu.washington.cs.soundwatch.wear.service.SnoozeSoundService"
+144-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:94:13-55
+145            android:exported="false" >
+145-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:95:13-37
+146        </service>
+147
+148        <activity
+148-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:98:9-108:20
+149            android:name="edu.washington.cs.soundwatch.wear.ui.activity.MainActivity"
+149-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:99:13-53
+150            android:exported="true"
+150-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:100:13-36
+151            android:label="@string/app_name"
+151-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:101:13-45
+152            android:launchMode="singleTask" >
+152-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:102:13-44
+153            <intent-filter>
+153-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:103:13-107:29
+154                <action android:name="android.intent.action.MAIN" />
+154-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:104:17-69
+154-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:104:25-66
+155
+156                <category android:name="android.intent.category.LAUNCHER" />
+156-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:106:17-77
+156-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:106:27-74
+157            </intent-filter>
+158        </activity>
+159
+160        <receiver
+160-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:110:9-116:20
+161            android:name="edu.washington.cs.soundwatch.wear.utils.AlarmReceiver"
+161-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:111:13-48
+162            android:exported="true" >
+162-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:112:13-36
+163            <intent-filter>
+163-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:113:13-115:29
+164                <action android:name="edu.washington.cs.soundwatch.almMgr" />
+164-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:114:17-78
+164-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\src\main\AndroidManifest.xml:114:25-75
+165            </intent-filter>
+166        </receiver>
+167
+168        <activity
+168-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hirwa\.gradle\caches\transforms-3\353d34e3e5c9bbb9a4359114fab45ed6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+169            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+169-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hirwa\.gradle\caches\transforms-3\353d34e3e5c9bbb9a4359114fab45ed6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+170            android:exported="false"
+170-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hirwa\.gradle\caches\transforms-3\353d34e3e5c9bbb9a4359114fab45ed6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+171            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+171-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hirwa\.gradle\caches\transforms-3\353d34e3e5c9bbb9a4359114fab45ed6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+172
+173        <receiver
+173-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:29:9-33:20
+174            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+174-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:30:13-85
+175            android:enabled="true"
+175-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:31:13-35
+176            android:exported="false" >
+176-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:32:13-37
+177        </receiver>
+178
+179        <service
+179-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:35:9-38:40
+180            android:name="com.google.android.gms.measurement.AppMeasurementService"
+180-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:36:13-84
+181            android:enabled="true"
+181-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:37:13-35
+182            android:exported="false" />
+182-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:38:13-37
+183        <service
+183-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:39:9-43:72
+184            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+184-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:40:13-87
+185            android:enabled="true"
+185-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:41:13-35
+186            android:exported="false"
+186-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:42:13-37
+187            android:permission="android.permission.BIND_JOB_SERVICE" />
+187-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\38027e293ad69919ba223c1546d3acdc\transformed\jetified-play-services-measurement-21.5.0\AndroidManifest.xml:43:13-69
+188
+189        <property
+189-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:30:9-32:61
+190            android:name="android.adservices.AD_SERVICES_CONFIG"
+190-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:31:13-65
+191            android:resource="@xml/ga_ad_services_config" />
+191-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:32:13-58
+192
+193        <service
+193-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:34:9-40:19
+194            android:name="com.google.firebase.components.ComponentDiscoveryService"
+194-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:35:13-84
+195            android:directBootAware="true"
+195-->[com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:32:13-43
+196            android:exported="false" >
+196-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:36:13-37
+197            <meta-data
+197-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:37:13-39:85
+198                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+198-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:38:17-139
+199                android:value="com.google.firebase.components.ComponentRegistrar" />
+199-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\42d21168783b6567823a7d82896c4487\transformed\jetified-play-services-measurement-api-21.5.0\AndroidManifest.xml:39:17-82
+200            <meta-data
+200-->[com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:15:13-17:85
+201                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+201-->[com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:16:17-126
+202                android:value="com.google.firebase.components.ComponentRegistrar" />
+202-->[com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:17:17-82
+203            <meta-data
+203-->[com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:18:13-20:85
+204                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+204-->[com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:19:17-115
+205                android:value="com.google.firebase.components.ComponentRegistrar" />
+205-->[com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\hirwa\.gradle\caches\transforms-3\5dc28575939bbc09c189b0f8f6fd9734\transformed\jetified-firebase-crashlytics-18.6.1\AndroidManifest.xml:20:17-82
+206            <meta-data
+206-->[com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:29:13-31:85
+207                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+207-->[com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:30:17-117
+208                android:value="com.google.firebase.components.ComponentRegistrar" />
+208-->[com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:31:17-82
+209            <meta-data
+209-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
+210                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+210-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
+211                android:value="com.google.firebase.components.ComponentRegistrar" />
+211-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
+212            <meta-data
+212-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
+213                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+213-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
+214                android:value="com.google.firebase.components.ComponentRegistrar" />
+214-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\6f8d98508540c421efe646232032071c\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
+215            <meta-data
+215-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\0bac1a00a3aab94064286f0097124524\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
+216                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+216-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\0bac1a00a3aab94064286f0097124524\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+217                android:value="com.google.firebase.components.ComponentRegistrar" />
+217-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\0bac1a00a3aab94064286f0097124524\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+218            <meta-data
+218-->[com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
+219                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+219-->[com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+220                android:value="com.google.firebase.components.ComponentRegistrar" />
+220-->[com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:37:17-82
+221            <meta-data
+221-->[com.google.firebase:firebase-datatransport:18.1.8] C:\Users\hirwa\.gradle\caches\transforms-3\c500e382e975fb10898a4cbff354f778\transformed\jetified-firebase-datatransport-18.1.8\AndroidManifest.xml:27:13-29:85
+222                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+222-->[com.google.firebase:firebase-datatransport:18.1.8] C:\Users\hirwa\.gradle\caches\transforms-3\c500e382e975fb10898a4cbff354f778\transformed\jetified-firebase-datatransport-18.1.8\AndroidManifest.xml:28:17-115
+223                android:value="com.google.firebase.components.ComponentRegistrar" />
+223-->[com.google.firebase:firebase-datatransport:18.1.8] C:\Users\hirwa\.gradle\caches\transforms-3\c500e382e975fb10898a4cbff354f778\transformed\jetified-firebase-datatransport-18.1.8\AndroidManifest.xml:29:17-82
+224        </service>
+225        <service
+225-->[com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:22:9-25:40
+226            android:name="com.google.firebase.sessions.SessionLifecycleService"
+226-->[com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:23:13-80
+227            android:enabled="true"
+227-->[com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:24:13-35
+228            android:exported="false" />
+228-->[com.google.firebase:firebase-sessions:1.2.1] C:\Users\hirwa\.gradle\caches\transforms-3\23f208f923e7f81edeae123badedef6e\transformed\jetified-firebase-sessions-1.2.1\AndroidManifest.xml:25:13-37
+229
+230        <provider
+230-->[com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
+231            android:name="com.google.firebase.provider.FirebaseInitProvider"
+231-->[com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:24:13-77
+232            android:authorities="edu.washington.cs.soundwatch.wear.firebaseinitprovider"
+232-->[com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:25:13-72
+233            android:directBootAware="true"
+233-->[com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:26:13-43
+234            android:exported="false"
+234-->[com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:27:13-37
+235            android:initOrder="100" />
+235-->[com.google.firebase:firebase-common:20.4.2] C:\Users\hirwa\.gradle\caches\transforms-3\3abb36c522040763aa1730c9fc3762c7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:28:13-36
+236        <provider
+236-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+237            android:name="androidx.startup.InitializationProvider"
+237-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+238            android:authorities="edu.washington.cs.soundwatch.wear.androidx-startup"
+238-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+239            android:exported="false" >
+239-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+240            <meta-data
+240-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+241                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+241-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+242                android:value="androidx.startup" />
+242-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hirwa\.gradle\caches\transforms-3\45abc95b5f3794841d7ae9ddf1326146\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+243            <meta-data
+243-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\c649d4bb8dc3601bef2dbdd3850f6d6d\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+244                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+244-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\c649d4bb8dc3601bef2dbdd3850f6d6d\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+245                android:value="androidx.startup" />
+245-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\hirwa\.gradle\caches\transforms-3\c649d4bb8dc3601bef2dbdd3850f6d6d\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+246            <meta-data
+246-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+247                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+247-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+248                android:value="androidx.startup" />
+248-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+249        </provider>
+250
+251        <uses-library
+251-->[androidx.window:window:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\645ab5af4d7898e4cc3ab2a26673a98f\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+252            android:name="androidx.window.extensions"
+252-->[androidx.window:window:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\645ab5af4d7898e4cc3ab2a26673a98f\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+253            android:required="false" />
+253-->[androidx.window:window:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\645ab5af4d7898e4cc3ab2a26673a98f\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+254        <uses-library
+254-->[androidx.window:window:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\645ab5af4d7898e4cc3ab2a26673a98f\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+255            android:name="androidx.window.sidecar"
+255-->[androidx.window:window:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\645ab5af4d7898e4cc3ab2a26673a98f\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+256            android:required="false" />
+256-->[androidx.window:window:1.0.0] C:\Users\hirwa\.gradle\caches\transforms-3\645ab5af4d7898e4cc3ab2a26673a98f\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+257        <uses-library
+257-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\hirwa\.gradle\caches\transforms-3\a86b829c9eae39a3bfa7ba13866d8ef3\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
+258            android:name="android.ext.adservices"
+258-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\hirwa\.gradle\caches\transforms-3\a86b829c9eae39a3bfa7ba13866d8ef3\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
+259            android:required="false" />
+259-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\hirwa\.gradle\caches\transforms-3\a86b829c9eae39a3bfa7ba13866d8ef3\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
+260        <!--
+261 Applications that target Android S+ require explicit declaration of
+262             any referenced vendor-provided libraries.
+263        -->
+264        <uses-native-library
+264-->[org.tensorflow:tensorflow-lite-gpu-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\7740e4bfa566619f6f67855b7bfac150\transformed\jetified-tensorflow-lite-gpu-api-2.14.0\AndroidManifest.xml:8:9-10:40
+265            android:name="libOpenCL.so"
+265-->[org.tensorflow:tensorflow-lite-gpu-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\7740e4bfa566619f6f67855b7bfac150\transformed\jetified-tensorflow-lite-gpu-api-2.14.0\AndroidManifest.xml:9:13-40
+266            android:required="false" />
+266-->[org.tensorflow:tensorflow-lite-gpu-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\7740e4bfa566619f6f67855b7bfac150\transformed\jetified-tensorflow-lite-gpu-api-2.14.0\AndroidManifest.xml:10:13-37
+267        <uses-native-library
+267-->[org.tensorflow:tensorflow-lite-gpu-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\7740e4bfa566619f6f67855b7bfac150\transformed\jetified-tensorflow-lite-gpu-api-2.14.0\AndroidManifest.xml:8:9-10:40
+268            android:name="libOpenCL-car.so"
+268-->[org.tensorflow:tensorflow-lite-gpu-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\7740e4bfa566619f6f67855b7bfac150\transformed\jetified-tensorflow-lite-gpu-api-2.14.0\AndroidManifest.xml:9:13-40
+269            android:required="false" />
+269-->[org.tensorflow:tensorflow-lite-gpu-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\7740e4bfa566619f6f67855b7bfac150\transformed\jetified-tensorflow-lite-gpu-api-2.14.0\AndroidManifest.xml:10:13-37
+270        <uses-native-library
+270-->[org.tensorflow:tensorflow-lite-gpu-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\7740e4bfa566619f6f67855b7bfac150\transformed\jetified-tensorflow-lite-gpu-api-2.14.0\AndroidManifest.xml:8:9-10:40
+271            android:name="libOpenCL-pixel.so"
+271-->[org.tensorflow:tensorflow-lite-gpu-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\7740e4bfa566619f6f67855b7bfac150\transformed\jetified-tensorflow-lite-gpu-api-2.14.0\AndroidManifest.xml:9:13-40
+272            android:required="false" />
+272-->[org.tensorflow:tensorflow-lite-gpu-api:2.14.0] C:\Users\hirwa\.gradle\caches\transforms-3\7740e4bfa566619f6f67855b7bfac150\transformed\jetified-tensorflow-lite-gpu-api-2.14.0\AndroidManifest.xml:10:13-37
+273
+274        <service
+274-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:28:9-34:19
+275            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+275-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:29:13-103
+276            android:exported="false" >
+276-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:30:13-37
+277            <meta-data
+277-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:31:13-33:39
+278                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+278-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:32:17-94
+279                android:value="cct" />
+279-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\e7b5c38d6ded6386b2cce7a6ea4722a3\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:33:17-36
+280        </service>
+281        <service
+281-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
+282            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+282-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
+283            android:exported="false"
+283-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
+284            android:permission="android.permission.BIND_JOB_SERVICE" >
+284-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
+285        </service>
+286
+287        <receiver
+287-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
+288            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+288-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
+289            android:exported="false" />
+289-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hirwa\.gradle\caches\transforms-3\21bd6ca482db193b9cfa9c6f179ee39d\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
+290        <receiver
+290-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+291            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+291-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+292            android:directBootAware="false"
+292-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+293            android:enabled="true"
+293-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+294            android:exported="true"
+294-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+295            android:permission="android.permission.DUMP" >
+295-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+296            <intent-filter>
+296-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+297                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+297-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+297-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+298            </intent-filter>
+299            <intent-filter>
+299-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+300                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+300-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+300-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+301            </intent-filter>
+302            <intent-filter>
+302-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+303                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+303-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+303-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+304            </intent-filter>
+305            <intent-filter>
+305-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+306                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+306-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+306-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7503b7ce64f08de3f6eff070fc40b9b\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+307            </intent-filter>
+308        </receiver>
+309    </application>
+310
+311</manifest>

@@ -1,0 +1,3 @@
+edu.washington.cs.soundwatch.wear.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

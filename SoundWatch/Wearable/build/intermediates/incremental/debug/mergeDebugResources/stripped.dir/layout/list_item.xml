@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edu.washington.cs.soundwatch.wear.ui.components.WearableListItemLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:defaultFocusHighlightEnabled="true"
+    android:paddingTop="2sp">
+<!--    <ImageView-->
+<!--        android:id="@+id/circle"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:layout_width="20dp"-->
+<!--        android:src="@drawable/wl_circle"-->
+<!--        android:contentDescription="TODO" />-->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0sp"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:background="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+</edu.washington.cs.soundwatch.wear.ui.components.WearableListItemLayout>
+
+    <!--android:textColor="@color/text_color"-->

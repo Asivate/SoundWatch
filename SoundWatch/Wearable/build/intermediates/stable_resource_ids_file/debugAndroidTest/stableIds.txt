@@ -1,0 +1,2 @@
+edu.washington.cs.soundwatch.wear.test:style/WhiteBackgroundTheme = 0x7f010001
+edu.washington.cs.soundwatch.wear.test:style/WhiteBackgroundDialogTheme = 0x7f010000

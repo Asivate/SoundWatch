@@ -1,0 +1,40 @@
+{
+    "assets": {
+        "bootstrap-native/armeabi-v7a/binascii.so": "5ac3c1c58eb426f44076bf63c8b04573de113ace",
+        "bootstrap-native/armeabi-v7a/math.so": "f7f36bacb0e0a196b0ee7556b2494cf35f3a2ff1",
+        "bootstrap-native/arm64-v8a/math.so": "20a01cb103636e7dd892b66023404d72abb54fc6",
+        "bootstrap-native/armeabi-v7a/_datetime.so": "b5dd599bff83bbfa8cdb27ae0b479196b81d8044",
+        "bootstrap-native/armeabi-v7a/zlib.so": "c36ad64acc3e54f6a89e16daeacf85884f9cb599",
+        "bootstrap-native/arm64-v8a/_sha512.so": "c25c71b9164c729f94b0c9cae773443c9b2fc27a",
+        "bootstrap-native/arm64-v8a/_ctypes.so": "23db73235644ae0465c7144f024268149b1a4dd4",
+        "bootstrap-native/arm64-v8a/_datetime.so": "5fec1cd682478fc183ec454042ab611c7fb0e4f4",
+        "app.imy": "2f3dac746b69e3d8217e183c218f5ed198a0f101",
+        "stdlib-common.imy": "f069a8398d4277467217bd451ae3aca9356a8db7",
+        "bootstrap-native/arm64-v8a/_struct.so": "cdeb6be605948c3b0c031de7b3a348ad11ecee02",
+        "bootstrap-native/armeabi-v7a/java/chaquopy.so": "14395d215c6e1df39da26199c3efcd4451d1d1ba",
+        "bootstrap-native/armeabi-v7a/_struct.so": "f18e0c07a69a58c502db9fe0039960b658884849",
+        "stdlib-arm64-v8a.imy": "5e691cda8acadd42fee59802e56fd0e2a1a8a432",
+        "stdlib-armeabi-v7a.imy": "06e615e21ddc79583cb881216a8a2c106374924b",
+        "bootstrap-native/arm64-v8a/binascii.so": "e2f4dfc369807e2cda6a71d4f0a3d0695bfbff49",
+        "bootstrap-native/armeabi-v7a/mmap.so": "483b47abd4a61464950142a4e1869bffac19e121",
+        "requirements-arm64-v8a.imy": "c780f90c1841841bdf3c64ebefece16569256162",
+        "bootstrap-native/arm64-v8a/java/chaquopy.so": "2f4ec521bcf64cb8249e96680beaba3fbce5c7ea",
+        "bootstrap.imy": "0ebdd233eb128b567b3efa3fbd4cadd733f98044",
+        "bootstrap-native/armeabi-v7a/_ctypes.so": "1d9a21d6e44201a712fd04b5abe46d680206042b",
+        "bootstrap-native/arm64-v8a/mmap.so": "b165a8e1d2e52d05d9dd9e568a94dfd3ed6bc4d9",
+        "cacert.pem": "7f295ea74fc7ed0af0e92be08071fb0b76c8509e",
+        "bootstrap-native/arm64-v8a/_random.so": "27718acbd38d018d3802cdfd8ef144d5123bb1b9",
+        "bootstrap-native/armeabi-v7a/_sha512.so": "bdf93fee94018dbd7632196340c60564abadc5d0",
+        "requirements-armeabi-v7a.imy": "3cd1157f7f3c939f2eed9daa2132a1b1ae39455b",
+        "bootstrap-native/arm64-v8a/zlib.so": "1b0355bee473b2208ff06d4518c6957fb30117fc",
+        "bootstrap-native/armeabi-v7a/_random.so": "7fa3f55894a4683900701465b4c2277dd312debc",
+        "requirements-common.imy": "d6e2ac28ff5d1cbb00bd56303fc6c7586fb1d917"
+    },
+    "extract_packages": [
+        "audioread",
+        "numpy",
+        "scipy",
+        "soundfile"
+    ],
+    "python_version": "3.8"
+}
