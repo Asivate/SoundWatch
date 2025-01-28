@@ -1,226 +1,87 @@
-from threading import Lock
-from flask import Flask, render_template, session, request, \
-    copy_current_request_context
-from flask_socketio import SocketIO, emit, join_room, leave_room, \
-    close_room, rooms, disconnect
-from keras.models import load_model
-import tensorflow as tf
-import numpy as np
-from vggish_input import waveform_to_examples
-import homesounds
-from pathlib import Path
-import time
-import argparse
-import wget
-from helpers import dbFS
+import eventlet
+eventlet.monkey_patch()
 
-# Set this variable to "threading", "eventlet" or "gevent" to test the
-# different async modes, or leave it set to None for the application to choose
-# the best option based on installed packages.
-async_mode = None
+from flask import Flask, render_template, request
+from flask_socketio import SocketIO, emit
+import logging
+import sys
+import json
+
+# Set up detailed logging
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
+PORT = 3000
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
-socketio = SocketIO(app, async_mode=async_mode)
-thread = None
-thread_lock = Lock()
 
-# contexts
-context = homesounds.everything
-# use this to change context -- see homesounds.py
-active_context = homesounds.everything
+# Initialize SocketIO with more detailed configuration
+socketio = SocketIO(
+    app, 
+    cors_allowed_origins="*",
+    async_mode='eventlet',
+    logger=True,
+    engineio_logger=True
+)
 
-# thresholds
-PREDICTION_THRES = 0.5  # confidence
-DBLEVEL_THRES = -30  # dB
+@socketio.on('connect')
+def handle_connect():
+    with app.app_context():
+        sid = request.sid
+        transport = request.environ.get('wsgi.url_scheme', 'unknown')
+        logger.info(f'Client connected - SID: {sid}, Transport: {transport}, IP: {request.remote_addr}')
+        emit('connection_response', {'data': 'Connected successfully!'})
+        logger.info(f'Sent connection response to client {sid}')
 
-CHANNELS = 1
-RATE = 16000
-CHUNK = RATE
-MICROPHONES_DESCRIPTION = []
-FPS = 60.0
+@socketio.on('start_listening')
+def handle_start_listening():
+    with app.app_context():
+        sid = request.sid
+        logger.info(f'Start listening request received from client {sid}')
+        try:
+            test_data = {
+                'label': 'Test Sound',
+                'accuracy': '1.0'
+            }
+            logger.info(f'Emitting test audio label to client {sid}: {json.dumps(test_data)}')
+            emit('audio_label', test_data)
+            logger.info(f'Audio label emitted successfully to client {sid}')
+        except Exception as e:
+            logger.error(f'Error handling start_listening for client {sid}: {str(e)}')
+            emit('error', {'message': f'Error processing request: {str(e)}'})
 
-# ###########################
-# # Download model, if it doesn't exist
-# ###########################
-# MODEL_URL = "https://www.dropbox.com/s/cq1d7uqg0l28211/example_model.hdf5?dl=1"
-# MODEL_PATH = "models/example_model.hdf5"
-# print("=====")
-# print("2 / 2: Checking model... ")
-# print("=====")
-# model_filename = "models/example_model.hdf5"
-# homesounds_model = Path(model_filename)
-# if (not homesounds_model.is_file()):
-#     print("Downloading example_model.hdf5 [867MB]: ")
-#     wget.download(MODEL_URL, MODEL_PATH)
+@socketio.on('disconnect')
+def handle_disconnect():
+    with app.app_context():
+        sid = request.sid
+        logger.info(f'Client disconnected - SID: {sid}')
 
-# ##############################
-# # Load Deep Learning Model
-# ##############################
-# print("Using deep learning model: %s" % (model_filename))
-# model = load_model(model_filename)
-# graph = tf.get_default_graph()
-
-# ##############################
-# # Setup Audio Callback
-# ##############################
-
-
-def audio_samples(in_data, frame_count, time_info, status_flags):
-    global graph
-    np_wav = np.fromstring(in_data, dtype=np.int16) / \
-        32768.0  # Convert to [-1.0, +1.0]
-    # Compute RMS and convert to dB
-    rms = np.sqrt(np.mean(np_wav**2))
-    db = dbFS(rms)
-
-    # Make predictions
-    x = waveform_to_examples(np_wav, RATE)
-    predictions = []
-    with graph.as_default():
-        if x.shape[0] != 0:
-            x = x.reshape(len(x), 96, 64, 1)
-            print('Reshape x successful', x.shape)
-            pred = model.predict(x)
-            predictions.append(pred)
-        print('Prediction succeeded')
-        for prediction in predictions:
-            context_prediction = np.take(
-                prediction[0], [homesounds.labels[x] for x in active_context])
-            m = np.argmax(context_prediction)
-            if (context_prediction[m] > PREDICTION_THRES and db > DBLEVEL_THRES):
-                print("Prediction: %s (%0.2f)" % (
-                    homesounds.to_human_labels[active_context[m]], context_prediction[m]))
-
-    return (in_data, pyaudio.paContinue)
-
-
-@socketio.on('audio_feature_data')
-def handle_source(json_data):
-    data = str(json_data['data'])
-    data = data[1:-1]
-    print('Data before transform to np', data)
-    x = np.fromstring(data, dtype=np.float16, sep=',')
-    print('data after to numpy', x)
-    x = x.reshape(1, 96, 64, 1)
-    print('Successfully reshape audio features', x.shape)
-
-    for prediction in predictions:
-        context_prediction = np.take(
-            prediction[0], [homesounds.labels[x] for x in active_context])
-        m = np.argmax(context_prediction)
-        print('Max prediction', str(
-            homesounds.to_human_labels[active_context[m]]), str(context_prediction[m]))
-        if (context_prediction[m] > PREDICTION_THRES and db > DBLEVEL_THRES):
-            socketio.emit('audio_label',
-                          {'label': str(homesounds.to_human_labels[active_context[m]]),
-                           'accuracy': str(context_prediction[m])})
-            print("Prediction: %s (%0.2f)" % (
-                homesounds.to_human_labels[active_context[m]], context_prediction[m]))
-    socket.emit('audio_label',
-                {
-                    'label': 'Unrecognized Sound',
-                    'accuracy': '1.0'
-                })
-
-
-@socketio.on('audio_data')
-def handle_source(json_data):
-    data = str(json_data['data'])
-    data = data[1:-1]
-    global graph
-    np_wav = np.fromstring(data, dtype=np.int16, sep=',') / \
-        32768.0  # Convert to [-1.0, +1.0]
-    # Compute RMS and convert to dB
-    print('Successfully convert to NP rep', np_wav)
-    rms = np.sqrt(np.mean(np_wav**2))
-    db = dbFS(rms)
-    print('Db...', db)
-    # Make predictions
-    print('Making prediction...')
-    x = waveform_to_examples(np_wav, RATE)
-    predictions = []
-    if x.shape[0] != 0:
-        x = x.reshape(len(x), 96, 64, 1)
-    print('Successfully reshape x', x.shape)
-    pred = model.predict(x)
-    predictions.append(pred)
-
-    with graph.as_default():
-    if x.shape[0] != 0:
-        x = x.reshape(len(x), 96, 64, 1)
-        print('Successfully reshape x', x)
-        # pred = model.predict(x)
-        # predictions.append(pred)
-
-    for prediction in predictions:
-        context_prediction = np.take(
-            prediction[0], [homesounds.labels[x] for x in active_context])
-        m = np.argmax(context_prediction)
-        print('Max prediction', str(
-            homesounds.to_human_labels[active_context[m]]), str(context_prediction[m]))
-        if (context_prediction[m] > PREDICTION_THRES and db > DBLEVEL_THRES):
-            socketio.emit('audio_label',
-                          {'label': str(homesounds.to_human_labels[active_context[m]]),
-                           'accuracy': str(context_prediction[m])})
-            print("Prediction: %s (%0.2f)" % (
-                homesounds.to_human_labels[active_context[m]], context_prediction[m]))
-    socket.emit('audio_label',
-                {
-                    'label': 'Unrecognized Sound',
-                    'accuracy': '1.0'
-                })
-
-
-def background_thread():
-    """Example of how to send server generated events to clients."""
-    count = 0
-    while True:
-        socketio.sleep(10)
-        count += 1
-        socketio.emit('my_response',
-                      {'data': 'Server generated event', 'count': count},
-                      namespace='/test')
-
-
-@app.route('/')
-def index():
-    return render_template('index.html',)
-
-@socketio.on('send_message')
-def handle_source(json_data):
-    print('Receive message...' + str(json_data['message']))
-    text = json_data['message'].encode('ascii', 'ignore')
-    socketio.emit('echo', {'echo': 'Server Says: ' + str(text)})
-    print('Sending message back..')
-
-@socketio.on('disconnect_request', namespace='/test')
-def disconnect_request():
-    @copy_current_request_context
-    def can_disconnect():
-        disconnect()
-
-    session['receive_count'] = session.get('receive_count', 0) + 1
-    # for this emit we use a callback function
-    # when the callback function is invoked we know that the message has been
-    # received and it is safe to disconnect
-    emit('my_response',
-         {'data': 'Disconnected!', 'count': session['receive_count']},
-         callback=can_disconnect)
-
-@socketio.on('connect', namespace='/test')
-def test_connect():
-    global thread
-    with thread_lock:
-        if thread is None:
-            thread = socketio.start_background_task(background_thread)
-    emit('my_response', {'data': 'Connected', 'count': 0})
-
-
-@socketio.on('disconnect', namespace='/test')
-def test_disconnect():
-    print('Client disconnected', request.sid)
-
+@socketio.on_error()
+def error_handler(e):
+    sid = request.sid if hasattr(request, 'sid') else 'Unknown'
+    logger.error(f'SocketIO error for client {sid}: {str(e)}')
+    emit('error', {'message': f'Server error: {str(e)}'})
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True)
+    try:
+        logger.info(f'Starting server on http://0.0.0.0:{PORT}')
+        logger.info('Server configured with:')
+        logger.info(f' - CORS: Allowed all origins')
+        logger.info(f' - Transport: WebSocket and Polling')
+        logger.info(f' - Async Mode: eventlet')
+        
+        socketio.run(
+            app, 
+            host='0.0.0.0', 
+            port=PORT,
+            debug=False,
+            use_reloader=False,
+            log_output=True
+        )
+    except Exception as e:
+        logger.error(f'Failed to start server: {e}')
+        sys.exit(1)

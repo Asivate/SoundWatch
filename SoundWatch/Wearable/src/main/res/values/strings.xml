@@ -30,4 +30,5 @@
     <string name="mic">mic</string>
     <string name="snooze">Snooze for</string>
     <string name="mic_button">Microphone Button</string>
+    <string name="listening">Listening...</string>
 </resources>

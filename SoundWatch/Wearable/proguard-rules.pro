@@ -74,4 +74,34 @@
 -keepclassmembers enum * {
     public static **[] values();
     public static ** valueOf(java.lang.String);
-} 
+}
+
+# Keep WorkManager classes
+-keep class androidx.work.** { *; }
+-keepclassmembers class * extends androidx.work.Worker {
+    public <init>(android.content.Context,androidx.work.WorkerParameters);
+}
+
+# Keep Wearable classes
+-keep class com.google.android.wearable.** { *; }
+-keep class androidx.wear.** { *; }
+
+# Keep LeakCanary classes
+-keep class leakcanary.** { *; }
+
+# Keep Data Builder and related classes
+-keepclassmembers class androidx.work.Data$Builder { *; }
+-keepclassmembers class androidx.work.Data { *; }
+-keepclassmembers class androidx.work.OneTimeWorkRequest$Builder { *; }
+-keepclassmembers class androidx.work.OneTimeWorkRequest { *; }
+-keepclassmembers class androidx.work.Operation { *; }
+-keepclassmembers class androidx.work.OutOfQuotaPolicy { *; }
+-keepclassmembers class androidx.work.WorkManager { *; }
+-keepclassmembers class androidx.work.WorkRequest$Builder { *; }
+-keepclassmembers class androidx.work.WorkRequest { *; }
+-keepclassmembers class androidx.work.Worker { *; }
+-keepclassmembers class androidx.work.multiprocess.RemoteListenableWorker { *; }
+
+# Keep WearableActivityController and related classes
+-keepclassmembers class com.google.android.wearable.compat.WearableActivityController { *; }
+-keepclassmembers class com.google.android.wearable.compat.WearableActivityController$AmbientCallback { *; } 

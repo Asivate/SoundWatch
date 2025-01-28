@@ -32,8 +32,9 @@ public class Constants {
 
     // UI Constants
     public static final int WEARABLE_LIST_CENTRAL_POSITION = 1;
-    public static final String[] ELEMENTS = {"Cancel", "1 min", "2 mins", "5 mins", "10 mins", "1 hour", "1 day", "Forever"};
-    public static final int[] ELEMENTS_IN_SEC = {0, 60, 120, 300, 600, 3600, 86400};
+    public static final String[] ELEMENTS = { "Cancel", "1 min", "2 mins", "5 mins", "10 mins", "1 hour", "1 day",
+            "Forever" };
+    public static final int[] ELEMENTS_IN_SEC = { 0, 60, 120, 300, 600, 3600, 86400 };
 
     // App State
     public static volatile boolean IS_RECORDING = false;
@@ -49,7 +50,7 @@ public class Constants {
     public static final String SNOOZE_SOUND = "SNOOZE_SOUND";
     public static final String SOUND_ID = "SOUND_ID";
     public static final String SOUND_LABEL = "SOUND_LABEL";
-    
+
     /**
      * Audio related constants
      */
@@ -93,11 +94,11 @@ public class Constants {
     public static final String PHONE_WATCH_SERVER_ARCHITECTURE = "PHONE_WATCH_SERVER_ARCHITECTURE";
     public static final String WATCH_ONLY_ARCHITECTURE = "WATCH_ONLY_ARCHITECTURE";
     public static final String WATCH_SERVER_ARCHITECTURE = "WATCH_SERVER_ARCHITECTURE";
-    public static final String ARCHITECTURE = PHONE_WATCH_ARCHITECTURE;
+    public static final String ARCHITECTURE = WATCH_ONLY_ARCHITECTURE;
 
     /*
-     *  Foreground Service configurations
-     * */
+     * Foreground Service configurations
+     */
     public interface ACTION {
         String MAIN_ACTION = "com.wearable.sound.utils.action.main";
         public static String PREV_ACTION = "com.wearable.sound.utils.action.prev";

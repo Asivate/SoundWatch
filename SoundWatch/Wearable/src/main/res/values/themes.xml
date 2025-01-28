@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.SoundWatch" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/wl_blue</item>
+        <item name="colorPrimaryDark">@color/wl_blue</item>
+        <item name="colorAccent">@color/wl_blue</item>
+        <!-- Wear OS specific -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowSwipeToDismiss">true</item>
+    </style>
+
+    <!-- Secondary theme that disables back swipe -->
+    <style name="DisableBackSwipe" parent="Theme.SoundWatch">
+        <item name="android:windowSwipeToDismiss">false</item>
+    </style>
+</resources> 

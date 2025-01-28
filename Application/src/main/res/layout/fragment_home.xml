@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/soundwatch"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/instruction_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/instruction" />
+
+        <!-- Emergency Sounds -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/category_1"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/fire_smoke_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fire_smoke_alarm" />
+
+        <!-- Home Sounds -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/category_2"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/door_in_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/door_in_use" />
+
+        <CheckBox
+            android:id="@+id/water_running"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/water_running" />
+
+        <CheckBox
+            android:id="@+id/microwave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/microwave" />
+
+        <CheckBox
+            android:id="@+id/door_bell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/door_bell" />
+
+        <!-- Human/Animal Sounds -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/category_3"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/speech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/speech" />
+
+        <CheckBox
+            android:id="@+id/dog_bark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dog_bark" />
+
+        <CheckBox
+            android:id="@+id/cat_meow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cat_meow" />
+
+        <CheckBox
+            android:id="@+id/baby_crying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/baby_cry" />
+
+        <!-- Outdoor Sounds -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/category_4"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/car_honk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/car_honk" />
+
+        <CheckBox
+            android:id="@+id/vehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vehicle" />
+
+        <!-- Tools Sounds -->
+        <TextView
+            android:id="@+id/category_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/category_5"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/drill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/drill" />
+
+        <CheckBox
+            android:id="@+id/vacuum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vacuum" />
+
+        <CheckBox
+            android:id="@+id/hair_dryer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hair_dryer" />
+
+        <!-- Additional sounds -->
+        <CheckBox
+            android:id="@+id/knocking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/knocking" />
+
+        <CheckBox
+            android:id="@+id/typing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/typing" />
+
+        <CheckBox
+            android:id="@+id/coughing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coughing" />
+
+        <!-- Padding views -->
+        <View
+            android:id="@+id/padding_top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <View
+            android:id="@+id/padding_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+    </LinearLayout>
+</ScrollView> 

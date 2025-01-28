@@ -11,6 +11,14 @@ public class SoundNotification {
         this.isSnoozed = isSnoozed;
     }
 
+    public String getSound() {
+        return label;
+    }
+
+    public boolean isEnabled() {
+        return isEnabled;
+    }
+
     @Override
     public String toString() {
         return "SoundNotification{" +

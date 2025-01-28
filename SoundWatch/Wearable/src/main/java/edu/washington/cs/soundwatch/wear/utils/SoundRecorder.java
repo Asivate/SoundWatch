@@ -104,8 +104,7 @@ public class SoundRecorder {
 
     private List<Short> soundBuffer = new ArrayList<>();
     private float[] input1D = new float[6144];
-    // private float [][][][] input4D = new float [1][96][64][1];
-    private float[][][] input3D = new float[1][96][64];
+    private float[][][][] input4D = new float[1][96][64][1];
     private float[][] output = new float[1][30];
     private final String mOutputFileName;
     private List<String> labels = new ArrayList<String>();
@@ -163,36 +162,45 @@ public class SoundRecorder {
             try {
                 Interpreter.Options options = new Interpreter.Options();
 
-                // Check if GPU is available
+                // Try GPU first
                 CompatibilityList compatList = new CompatibilityList();
+                boolean useGpu = false;
 
                 if (compatList.isDelegateSupportedOnThisDevice()) {
-                    // Initialize GPU delegate
-                    GpuDelegate.Options gpuOptions = new GpuDelegate.Options();
-                    gpuOptions.setPrecisionLossAllowed(true); // Enable FP16
-                    gpuOptions.setQuantizedModelsAllowed(true); // Enable quantization
-                    gpuDelegate = new GpuDelegate(gpuOptions);
+                    try {
+                        // Initialize GPU delegate
+                        GpuDelegate.Options gpuOptions = new GpuDelegate.Options();
+                        gpuOptions.setPrecisionLossAllowed(true); // Enable FP16
+                        gpuOptions.setQuantizedModelsAllowed(true); // Enable quantization
+                        gpuDelegate = new GpuDelegate(gpuOptions);
 
-                    options.addDelegate(gpuDelegate);
-                    Log.i(TAG, "Using GPU Delegate for inference");
-                } else {
-                    Log.i(TAG, "GPU Delegate not supported on this device, falling back to CPU");
+                        options.addDelegate(gpuDelegate);
+                        options.setNumThreads(4);
+
+                        // Try creating interpreter with GPU
+                        tfLite = new Interpreter(loadModelFile(mContext.getAssets(), actualModelFilename), options);
+                        useGpu = true;
+                        Log.i(TAG, "Successfully initialized TensorFlow Lite with GPU");
+                    } catch (Exception e) {
+                        Log.w(TAG, "GPU delegate failed, falling back to CPU: " + e.getMessage());
+                        // Clean up GPU delegate if initialization failed
+                        if (gpuDelegate != null) {
+                            gpuDelegate.close();
+                            gpuDelegate = null;
+                        }
+                        useGpu = false;
+                    }
                 }
 
-                options.setNumThreads(4); // Set number of threads for CPU
-
-                tfLite = new Interpreter(loadModelFile(mContext.getAssets(), actualModelFilename), options);
-            } catch (Exception e) {
-                Log.e(TAG, "Error initializing TensorFlow Lite with GPU: " + e.getMessage());
-                // Fallback to CPU only
-                try {
-                    Interpreter.Options options = new Interpreter.Options();
+                if (!useGpu) {
+                    // Fall back to CPU with XNNPACK
+                    options = new Interpreter.Options();
                     options.setNumThreads(4);
                     tfLite = new Interpreter(loadModelFile(mContext.getAssets(), actualModelFilename), options);
-                    Log.i(TAG, "Successfully initialized TensorFlow Lite with CPU");
-                } catch (Exception e2) {
-                    throw new RuntimeException("Failed to initialize TensorFlow Lite: " + e2.getMessage());
+                    Log.i(TAG, "Successfully initialized TensorFlow Lite with CPU (XNNPACK)");
                 }
+            } catch (Exception e) {
+                throw new RuntimeException("Failed to initialize TensorFlow Lite: " + e.getMessage());
             }
         }
     }
@@ -444,7 +452,7 @@ public class SoundRecorder {
                 int count = 0;
                 for (int j = 0; j < 96; j++) {
                     for (int k = 0; k < 64; k++) {
-                        input3D[0][j][k] = features[count];
+                        input4D[0][j][k][0] = features[count];
                         count++;
                     }
                 }
@@ -454,7 +462,7 @@ public class SoundRecorder {
                     startTime = System.currentTimeMillis();
 
                 // Run inference
-                tfLite.run(input3D, output);
+                tfLite.run(input4D, output);
 
                 if (TEST_MODEL_LATENCY) {
                     long elapsedTime = System.currentTimeMillis() - startTime;
@@ -472,40 +480,31 @@ public class SoundRecorder {
                     }
                 }
 
-                // Find max and argmax
-                float max = output[0][0];
-                int argmax = 0;
-                for (int i = 0; i < 30; i++) {
-                    if (max < output[0][i]) {
-                        max = output[0][i];
-                        argmax = i;
+                // Process results
+                float maxVal = -Float.MAX_VALUE;
+                int maxIdx = -1;
+                for (int i = 0; i < output[0].length; i++) {
+                    if (output[0][i] > maxVal) {
+                        maxVal = output[0][i];
+                        maxIdx = i;
                     }
                 }
 
-                if (max > PREDICTION_THRES) {
-                    // Get label and confidence
-                    final String prediction = labels.get(argmax);
-                    final String confidence = String.format("%,.2f", max);
-                    // Send prediction back to MainActivity
+                if (maxVal > PREDICTION_THRES) {
+                    String prediction = labels.get(maxIdx);
+                    String confidence = String.format("%.2f", maxVal);
+                    Log.d(TAG, "Prediction: " + prediction + " (confidence: " + confidence + ")");
 
-                    Intent broadcastIntent = new Intent();
-                    broadcastIntent.setAction("edu.washington.cs.soundwatch.wear.SOUND_PREDICTION");
-                    if (TEST_E2E_LATENCY) {
-                        String data = prediction + "," + confidence + "," + LocalTime.now() + "," + db(sData) + ","
-                                + System.currentTimeMillis();
-                        broadcastIntent.putExtra(AUDIO_LABEL, data);
-                    } else {
-                        String data = prediction + "," + confidence + "," + LocalTime.now() + "," + db(sData);
-                        broadcastIntent.putExtra(AUDIO_LABEL, data);
-                    }
-                    mContext.sendBroadcast(broadcastIntent);
+                    // Update UI
+                    Intent intent = new Intent(mBroadcastSoundPrediction);
+                    intent.putExtra(AUDIO_LABEL, prediction + ": " + confidence);
+                    mContext.sendBroadcast(intent);
                     return prediction + ": " + (Double.parseDouble(confidence) * 100) + "%                           "
                             + LocalTime.now();
                 }
             }
-        } catch (PyException e) {
-            Log.i(TAG, "Something went wrong parsing to MFCC feature");
-            return "Something went wrong parsing to MFCC feature";
+        } catch (Exception e) {
+            Log.e(TAG, "Error processing audio: " + e.getMessage());
         }
         Log.i(TAG, "Sending Mocked Sound");
         // Log.i(TAG, "Unrecognized Sound");

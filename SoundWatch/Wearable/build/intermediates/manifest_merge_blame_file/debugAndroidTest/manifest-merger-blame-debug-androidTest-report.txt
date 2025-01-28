@@ -3,24 +3,24 @@
 3    package="edu.washington.cs.soundwatch.wear.test" >
 4
 5    <uses-sdk
-5-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:6:5-8:41
+5-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:6:5-8:41
 6        android:minSdkVersion="26"
-6-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:7:9-35
+6-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:7:9-35
 7        android:targetSdkVersion="34" />
-7-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:8:9-38
+7-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:8:9-38
 8
 9    <instrumentation
-9-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:10:5-15:69
+9-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:10:5-15:69
 10        android:name="android.test.InstrumentationTestRunner"
-10-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:11:9-62
+10-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:11:9-62
 11        android:functionalTest="false"
-11-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:12:9-39
+11-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:12:9-39
 12        android:handleProfiling="false"
-12-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:13:9-40
+12-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:13:9-40
 13        android:label="Tests for edu.washington.cs.soundwatch.wear"
-13-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:14:9-68
+13-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:14:9-68
 14        android:targetPackage="edu.washington.cs.soundwatch.wear" />
-14-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:15:9-66
+14-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:15:9-66
 15
 16    <uses-permission android:name="android.permission.REORDER_TASKS" />
 16-->[androidx.test:core:1.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7e085c69c51add8bb7f494038db1642\transformed\jetified-core-1.5.0\AndroidManifest.xml:24:5-72
@@ -40,23 +40,23 @@
 22    </queries>
 23
 24    <application
-24-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:17:5-49:19
+24-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:17:5-49:19
 25        android:debuggable="true"
-25-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:18:9-34
+25-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:18:9-34
 26        android:extractNativeLibs="false" >
 27        <activity
-27-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:20:9-28:20
+27-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:20:9-28:20
 28            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
-28-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:21:13-99
+28-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:21:13-99
 29            android:exported="true"
-29-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:22:13-36
+29-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:22:13-36
 30            android:theme="@style/WhiteBackgroundTheme" >
-30-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:23:13-56
+30-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:23:13-56
 31            <intent-filter>
-31-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:25:13-27:29
+31-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:25:13-27:29
 32                <action android:name="android.intent.action.MAIN" />
-32-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:26:17-69
-32-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:26:25-66
+32-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:26:17-69
+32-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:26:25-66
 33            </intent-filter>
 34            <intent-filter android:priority="-100" >
 34-->[androidx.test:core:1.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7e085c69c51add8bb7f494038db1642\transformed\jetified-core-1.5.0\AndroidManifest.xml:31:13-33:29
@@ -67,18 +67,18 @@
 36            </intent-filter>
 37        </activity>
 38        <activity
-38-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:29:9-37:20
+38-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:29:9-37:20
 39            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
-39-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:30:13-95
+39-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:30:13-95
 40            android:exported="true"
-40-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:31:13-36
+40-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:31:13-36
 41            android:theme="@style/WhiteBackgroundTheme" >
-41-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:32:13-56
+41-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:32:13-56
 42            <intent-filter>
-42-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:25:13-27:29
+42-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:25:13-27:29
 43                <action android:name="android.intent.action.MAIN" />
-43-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:26:17-69
-43-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:26:25-66
+43-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:26:17-69
+43-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:26:25-66
 44            </intent-filter>
 45            <intent-filter android:priority="-100" >
 45-->[androidx.test:core:1.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7e085c69c51add8bb7f494038db1642\transformed\jetified-core-1.5.0\AndroidManifest.xml:31:13-33:29
@@ -89,18 +89,18 @@
 47            </intent-filter>
 48        </activity>
 49        <activity
-49-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:38:9-46:20
+49-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:38:9-46:20
 50            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
-50-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:39:13-103
+50-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:39:13-103
 51            android:exported="true"
-51-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:40:13-36
+51-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:40:13-36
 52            android:theme="@style/WhiteBackgroundDialogTheme" >
-52-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:41:13-62
+52-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:41:13-62
 53            <intent-filter>
-53-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:25:13-27:29
+53-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:25:13-27:29
 54                <action android:name="android.intent.action.MAIN" />
-54-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:26:17-69
-54-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:26:25-66
+54-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:26:17-69
+54-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:26:25-66
 55            </intent-filter>
 56            <intent-filter android:priority="-100" >
 56-->[androidx.test:core:1.5.0] C:\Users\hirwa\.gradle\caches\transforms-3\a7e085c69c51add8bb7f494038db1642\transformed\jetified-core-1.5.0\AndroidManifest.xml:31:13-33:29
@@ -112,8 +112,8 @@
 59        </activity>
 60
 61        <uses-library android:name="android.test.runner" />
-61-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:48:9-60
-61-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest6747746161714107319.xml:48:23-57
+61-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:48:9-60
+61-->C:\Users\hirwa\Documents\projects\sound watch application\SoundWatch\SoundWatch\Wearable\build\intermediates\tmp\manifest\androidTest\debug\tempFile2ProcessTestManifest5474867958071832597.xml:48:23-57
 62    </application>
 63
 64</manifest>

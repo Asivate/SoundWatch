@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Sound IDs -->
+    <item name="fire_smoke_alarm" type="id"/>
+    <item name="speech" type="id"/>
+    <item name="door_in_use" type="id"/>
+    <item name="water_running" type="id"/>
+    <item name="knocking" type="id"/>
+    <item name="microwave" type="id"/>
+    <item name="dog_bark" type="id"/>
+    <item name="cat_meow" type="id"/>
+    <item name="car_honk" type="id"/>
+    <item name="vehicle" type="id"/>
+    <item name="baby_crying" type="id"/>
+    <item name="utensils_and_cutlery" type="id"/>
+    <item name="alarm_clock" type="id"/>
+    <item name="saw" type="id"/>
+    <item name="hammering" type="id"/>
+    <item name="snoring" type="id"/>
+    <item name="laughing" type="id"/>
+    <item name="hair_dryer" type="id"/>
+    <item name="toilet_flush" type="id"/>
+    <item name="door_bell" type="id"/>
+    <item name="dishwasher" type="id"/>
+    <item name="blender" type="id"/>
+    <item name="tooth_brush" type="id"/>
+    <item name="shaver" type="id"/>
+    <item name="chopping" type="id"/>
+    <item name="vacuum" type="id"/>
+    <item name="drill" type="id"/>
+    <item name="phone_ring" type="id"/>
+    <item name="coughing" type="id"/>
+    <item name="typing" type="id"/>
+
+    <!-- UI Element IDs -->
+    <item name="title_text" type="id"/>
+    <item name="scroll_view" type="id"/>
+    <item name="fragment_container" type="id"/>
+    <item name="instruction_text" type="id"/>
+    <item name="category_5" type="id"/>
+    <item name="padding_top" type="id"/>
+    <item name="padding_bottom" type="id"/>
+    <item name="frame_container" type="id"/>
+    <item name="navigation_home" type="id"/>
+    <item name="navigation_about" type="id"/>
+    <item name="navigation_setting" type="id"/>
+    <item name="navigation_help" type="id"/>
+</resources> 
