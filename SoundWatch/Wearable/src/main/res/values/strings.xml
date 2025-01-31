@@ -31,4 +31,7 @@
     <string name="snooze">Snooze for</string>
     <string name="mic_button">Microphone Button</string>
     <string name="listening">Listening...</string>
+    <string name="error_recording">Error starting recording</string>
+    <string name="error_initializing">Error initializing recorder</string>
+    <string name="error_server_connection">Server connection error</string>
 </resources>

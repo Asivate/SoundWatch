@@ -108,4 +108,40 @@
             android:layout_height="match_parent"
             android:scrollbars="vertical" />
     </LinearLayout>
+
+    <androidx.wear.widget.BoxInsetLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/box_inset_layout_padding">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/inner_frame_layout_padding">
+
+            <TextView
+                android:id="@+id/connection_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/transparent"
+                android:padding="4dp"
+                android:visibility="visible"
+                android:text="Waiting for phone..." />
+
+            <ImageView
+                android:id="@+id/connection_icon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Connection status icon"
+                android:src="@android:drawable/presence_offline" />
+
+        </FrameLayout>
+    </androidx.wear.widget.BoxInsetLayout>
 </FrameLayout>

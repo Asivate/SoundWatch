@@ -24,6 +24,20 @@ import android.Manifest;
 import android.content.pm.PackageManager;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import com.google.android.gms.wearable.MessageClient;
+import com.google.android.gms.wearable.Wearable;
+import com.google.android.gms.wearable.Node;
+import com.google.android.gms.wearable.MessageEvent;
+import com.google.android.gms.tasks.Tasks;
+import android.os.Handler;
+import android.os.Looper;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+import android.widget.ImageView;
+import android.graphics.Color;
+import android.content.SharedPreferences;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     public static final String mBroadcastSoundPrediction = "edu.washington.cs.soundwatch.wear.SOUND_PREDICTION";
@@ -34,11 +48,39 @@ public class MainActivity extends AppCompatActivity {
     private SoundRecorder soundRecorder;
     private BroadcastReceiver soundPredictionReceiver;
     private static final int PERMISSION_REQUEST_CODE = 123;
+    private TextView connectionStatusText;
+    private ImageView connectionStatusIcon;
+    private Handler mainHandler = new Handler(Looper.getMainLooper());
+    private ScheduledExecutorService executorService;
+    private String connectedPhoneId;
+    private static final String CONNECTION_PREFS = "connection_prefs";
+    private static final String CONNECTION_TEST_PATH = "/connection_test";
+    private static final String WATCH_CONNECTION_STATUS_PATH = "/watch_connection_status";
+    private String connectedPhoneName = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Initialize connection UI elements
+        connectionStatusText = findViewById(R.id.connection_status);
+        connectionStatusIcon = findViewById(R.id.connection_icon);
+
+        // Initialize executor service for background tasks
+        executorService = Executors.newSingleThreadScheduledExecutor();
+
+        // Start connection monitoring
+        startConnectionMonitoring();
+
+        // Try to reconnect to last known phone
+        reconnectToLastPhone();
+
+        // Initialize connection status UI
+        updateConnectionStatus("Waiting for phone...");
+
+        // Set up Wear message client
+        setupWearMessageClient();
 
         if (!Constants.ARCHITECTURE.equals(Constants.WATCH_ONLY_ARCHITECTURE)) {
             setupSocket();
@@ -222,6 +264,9 @@ public class MainActivity extends AppCompatActivity {
         if (soundPredictionReceiver != null) {
             unregisterReceiver(soundPredictionReceiver);
         }
+        if (executorService != null) {
+            executorService.shutdown();
+        }
     }
 
     private final Emitter.Listener onNewMessage = new Emitter.Listener() {
@@ -249,15 +294,23 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+        // First check if we have a valid connection
+        if (!isConnectedToPhone()) {
+            Toast.makeText(this, "Please wait for phone connection", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Show immediate visual feedback
+        TextView soundDisplay = findViewById(R.id.soundDisplay);
+        TextView dontShowDisplay = findViewById(R.id.dontshowDisplay);
+
+        soundDisplay.setText(R.string.listening);
+        soundDisplay.setVisibility(View.VISIBLE);
+        dontShowDisplay.setVisibility(View.GONE);
+
         if (Constants.ARCHITECTURE.equals(Constants.WATCH_ONLY_ARCHITECTURE)) {
             // Use local sound processing
             Log.d(TAG, "Starting local sound processing");
-            TextView soundDisplay = findViewById(R.id.soundDisplay);
-            soundDisplay.setText(R.string.listening);
-
-            // Hide the instruction text
-            TextView dontShowDisplay = findViewById(R.id.dontshowDisplay);
-            dontShowDisplay.setVisibility(View.GONE);
 
             // Start recording and processing
             if (soundRecorder != null) {
@@ -267,11 +320,13 @@ public class MainActivity extends AppCompatActivity {
                     Log.e(TAG, "Error starting recording: " + e.getMessage());
                     Toast.makeText(this, "Error starting recording: " + e.getMessage(),
                             Toast.LENGTH_SHORT).show();
+                    soundDisplay.setText(R.string.error_recording);
                 }
             } else {
                 Log.e(TAG, "SoundRecorder not initialized");
                 Toast.makeText(this, "Error: Sound recorder not initialized. Please restart the app.",
                         Toast.LENGTH_LONG).show();
+                soundDisplay.setText(R.string.error_initializing);
                 initializeSoundRecorder();
             }
         } else {
@@ -280,23 +335,10 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "Socket status - connected: " + mSocket.connected());
                 Log.d(TAG, "Sending start_listening event to server");
                 mSocket.emit("start_listening");
-
-                // Update UI to show listening state
-                TextView soundDisplay = findViewById(R.id.soundDisplay);
-                soundDisplay.setText(R.string.listening);
-                Log.d(TAG, "Updated display to listening state");
-
-                // Hide the instruction text
-                TextView dontShowDisplay = findViewById(R.id.dontshowDisplay);
-                dontShowDisplay.setVisibility(View.GONE);
-                Log.d(TAG, "Hidden instruction text");
             } else {
                 String status = mSocket == null ? "Socket is null" : "Socket is disconnected";
                 Log.e(TAG, "Cannot start listening: " + status);
-                Log.e(TAG, "Socket connection state: " + (mSocket != null ? mSocket.connected() : "null"));
-
-                runOnUiThread(() -> Toast.makeText(MainActivity.this,
-                        "Not connected to server", Toast.LENGTH_SHORT).show());
+                soundDisplay.setText(R.string.error_server_connection);
 
                 // Try to reconnect
                 if (mSocket != null) {
@@ -308,5 +350,193 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
+    }
+
+    private boolean isConnectedToPhone() {
+        try {
+            List<Node> nodes = Tasks.await(Wearable.getNodeClient(this).getConnectedNodes());
+            return !nodes.isEmpty();
+        } catch (Exception e) {
+            Log.e(TAG, "Error checking phone connection: " + e.getMessage());
+            return false;
+        }
+    }
+
+    private void setupWearMessageClient() {
+        MessageClient messageClient = Wearable.getMessageClient(this);
+        messageClient.addListener(messageEvent -> {
+            if (messageEvent.getPath().equals(CONNECTION_TEST_PATH)) {
+                String message = new String(messageEvent.getData());
+                if (message.startsWith("phone_connected:")) {
+                    String[] parts = message.split(":");
+                    if (parts.length >= 3) {
+                        String phoneModel = parts[1];
+                        String androidVersion = parts[2];
+                        connectedPhoneName = phoneModel;
+                        updateConnectionStatus("Connected to " + phoneModel + " (Android " + androidVersion + ")");
+
+                        // Save connection info
+                        SharedPreferences prefs = getSharedPreferences(CONNECTION_PREFS, MODE_PRIVATE);
+                        prefs.edit()
+                                .putString("connected_phone_model", phoneModel)
+                                .putString("connected_phone_android", androidVersion)
+                                .putLong("last_connection_time", System.currentTimeMillis())
+                                .apply();
+
+                        // Send acknowledgment back to phone
+                        messageClient.sendMessage(
+                                messageEvent.getSourceNodeId(),
+                                WATCH_CONNECTION_STATUS_PATH,
+                                "watch_ready".getBytes())
+                                .addOnFailureListener(
+                                        e -> Log.e(TAG, "Failed to send acknowledgment: " + e.getMessage()));
+                    }
+                }
+            }
+        });
+    }
+
+    private void updateConnectionStatus(final String status) {
+        runOnUiThread(() -> {
+            if (connectionStatusText != null) {
+                connectionStatusText.setText(status);
+                connectionStatusText.setVisibility(View.VISIBLE);
+
+                // Update UI colors based on connection state
+                if (status.startsWith("Connected")) {
+                    connectionStatusText.setTextColor(getResources().getColor(R.color.connection_success));
+                    if (connectionStatusIcon != null) {
+                        connectionStatusIcon.setImageResource(android.R.drawable.presence_online);
+                        connectionStatusIcon.setColorFilter(getResources().getColor(R.color.connection_success));
+                    }
+                } else {
+                    connectionStatusText.setTextColor(getResources().getColor(R.color.connection_error));
+                    if (connectionStatusIcon != null) {
+                        connectionStatusIcon.setImageResource(android.R.drawable.presence_offline);
+                        connectionStatusIcon.setColorFilter(getResources().getColor(R.color.connection_error));
+                    }
+                }
+
+                // Show toast for important status changes
+                if (status.startsWith("Connected") || status.equals("Disconnected")) {
+                    showConnectionToast(status.startsWith("Connected"),
+                            status.startsWith("Connected") ? status.substring(13) : null);
+                }
+            }
+        });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        // Check if we have saved connection info
+        SharedPreferences prefs = getSharedPreferences(CONNECTION_PREFS, MODE_PRIVATE);
+        String savedPhoneModel = prefs.getString("connected_phone_model", null);
+        String savedAndroidVersion = prefs.getString("connected_phone_android", null);
+        long lastConnectionTime = prefs.getLong("last_connection_time", 0);
+
+        // Only use saved info if it's recent (within last hour)
+        if (savedPhoneModel != null && savedAndroidVersion != null &&
+                System.currentTimeMillis() - lastConnectionTime < 3600000) {
+            updateConnectionStatus("Connected to " + savedPhoneModel + " (Android " + savedAndroidVersion + ")");
+        } else {
+            updateConnectionStatus("Waiting for phone...");
+            // Trigger a new connection check
+            checkConnectionStatus();
+        }
+    }
+
+    private void startConnectionMonitoring() {
+        executorService.scheduleAtFixedRate(() -> {
+            checkConnectionStatus();
+        }, 0, 30, TimeUnit.SECONDS);
+    }
+
+    private void checkConnectionStatus() {
+        try {
+            Tasks.await(Wearable.getNodeClient(this).getConnectedNodes())
+                    .stream()
+                    .findFirst()
+                    .ifPresent(node -> {
+                        updateConnectionUI(true, node);
+                        connectedPhoneId = node.getId();
+                        saveConnectedPhoneInfo(node);
+                    });
+        } catch (Exception e) {
+            Log.e(TAG, "Error checking connection status: " + e.getMessage());
+            updateConnectionUI(false, null);
+        }
+    }
+
+    private void updateConnectionUI(boolean connected, Node phoneNode) {
+        mainHandler.post(() -> {
+            if (connected && phoneNode != null) {
+                connectionStatusText.setText(String.format("Connected to %s", phoneNode.getDisplayName()));
+                connectionStatusText.setTextColor(getColor(R.color.connection_success));
+                if (connectionStatusIcon != null) {
+                    connectionStatusIcon.setImageResource(android.R.drawable.presence_online);
+                }
+                showConnectionToast(true, phoneNode.getDisplayName());
+            } else {
+                connectionStatusText.setText("Disconnected");
+                connectionStatusText.setTextColor(getColor(R.color.connection_error));
+                if (connectionStatusIcon != null) {
+                    connectionStatusIcon.setImageResource(android.R.drawable.presence_offline);
+                }
+                showConnectionToast(false, null);
+            }
+        });
+    }
+
+    private void showConnectionToast(boolean connected, String deviceName) {
+        String message = connected ? String.format("Connected to %s", deviceName) : "Disconnected from phone";
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+    }
+
+    private void saveConnectedPhoneInfo(Node phoneNode) {
+        SharedPreferences prefs = getSharedPreferences(CONNECTION_PREFS, MODE_PRIVATE);
+        prefs.edit()
+                .putString("last_connected_phone_id", phoneNode.getId())
+                .putString("last_connected_phone_name", phoneNode.getDisplayName())
+                .apply();
+    }
+
+    private void reconnectToLastPhone() {
+        SharedPreferences prefs = getSharedPreferences(CONNECTION_PREFS, MODE_PRIVATE);
+        String lastPhoneId = prefs.getString("last_connected_phone_id", null);
+
+        if (lastPhoneId != null) {
+            Log.d(TAG, "Attempting to reconnect to last known phone: " + lastPhoneId);
+            checkConnectionStatus();
+        }
+    }
+
+    public void onMessageReceived(MessageEvent messageEvent) {
+        if (messageEvent.getPath().equals(CONNECTION_TEST_PATH)) {
+            String message = new String(messageEvent.getData());
+            if (message.startsWith("phone_connected:")) {
+                String[] parts = message.split(":");
+                if (parts.length >= 3) {
+                    String phoneModel = parts[1];
+                    String androidVersion = parts[2];
+                    updatePhoneDetails(phoneModel, androidVersion);
+                }
+            }
+        }
+    }
+
+    private void updatePhoneDetails(String phoneModel, String androidVersion) {
+        mainHandler.post(() -> {
+            String details = String.format("Connected to %s (Android %s)", phoneModel, androidVersion);
+            connectionStatusText.setText(details);
+
+            // Save these details
+            SharedPreferences prefs = getSharedPreferences(CONNECTION_PREFS, MODE_PRIVATE);
+            prefs.edit()
+                    .putString("connected_phone_model", phoneModel)
+                    .putString("connected_phone_android", androidVersion)
+                    .apply();
+        });
     }
 }
